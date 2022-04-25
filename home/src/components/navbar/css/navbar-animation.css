@@ -1,58 +1,67 @@
-.navbar { overflow: hidden;}
+#navbarAnimationClose, #navbarAnimation { overflow: hidden;}
 #navbarAnimation {
     position: relative;
     animation-name: navbar;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
-@keyframes navbar {
-    from   { right: 500px; background-color: var(--color-4)}
-    to  { right:0px}  
-}
-
-#animationInHomeOption a{
+#navbarAnimationClose {
     position: relative;
+    animation-name: navbarClose;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    background-color: var(--color-4)
+}
+@media (min-width: 1080px) {
+    @keyframes navbar {
+        from { width: 3vw; background-color: var(--color-4); }
+        to { width: 15vw; }
+    }
+    @keyframes navbarClose {
+        from  { width: 15vw; background-color: var(--color-1); }  
+        to   { width: 3vw;}
+    }
+}
+#animationInHomeOption a {
+    margin: 0 0 1px 0;
+    color: var(--color-1);
+    background-color: var(--color-6);
     animation-name: homeOption;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
 @keyframes homeOption {
-    0%   { right:400px; color: var(--color-1);}
-    50%   { right:400px; color: var(--color-1);}
-    100%  { right:0px;}  
+    0% { top: 800px; color: var(--color-1); }
+    50% { top: 800px; color: var(--color-1); }
+    100% { top: 0px; }
 }
-#animationInProfileOption a{
-    position: relative;
+#animationInProfileOption a {
     animation-name: profileOption;
-    animation-duration: 3.4s;
+    animation-duration: 2.9s;
     animation-iteration-count: 1;
 }
 @keyframes profileOption {
-    0%   { left:400px; color: var(--color-1);}
-    50%   { left:400px; color: var(--color-1);}
-    100%  { left:0px;}  
+    0% { left: 400px; color: var(--color-1);}
+    50% { left: 400px; color: var(--color-1); }
+    100% { left: 0px;}
 }
-#animationInProjectsOption a{
-    position: relative;
+#animationInProjectsOption a {
     animation-name: projectsOption;
-    animation-duration: 3.8s;
+    animation-duration: 3.3s;
     animation-iteration-count: 1;
 }
 @keyframes projectsOption {
-    0%   { right:400px; color: var(--color-1);}
-    50%   { right:400px; color: var(--color-1);}
-    100%  { right:0px;}   
+    0% { right: 400px; color: var(--color-1);}
+    50% { right: 400px; color: var(--color-1); }
+    100% { right: 0px; }
 }
-#animationInContactOption a{
-    position: relative;
+#animationInContactOption a {
     animation-name: contactOption;
-    animation-duration: 4.2s;
+    animation-duration: 3.7s;
     animation-iteration-count: 1;
 }
 @keyframes contactOption {
-    0%   { left:400px; color: var(--color-1);}
-    50%   { left:400px; color: var(--color-1);}
-    100%  { left:0px;}    
+    0% { left: 400px; color: var(--color-1);}
+    50% { left: 400px; color: var(--color-1); }
+    100% { left: 0px; }
 }
-
-
