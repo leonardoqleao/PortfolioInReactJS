@@ -8,25 +8,25 @@ class Navbar extends Component {
         return (
             <nav className='navbar'>
                 <ul className='navbarUl1'>
-                    <li>
+                    <li className='navbar-options'>
                         <a href="#home">Home</a>
 
                     </li>
-                    <li>
+                    <li className='navbar-options'>
                         <a href="#profile">Profile</a>
                     </li>
-                    <li>
+                    <li className='navbar-options'>
                         <a href="#projects">Projects</a>
                         <ul className='navbarUl2'>
-                            <li>
+                            <li className='navbar-options'>
                                 <a href="#project-1">Project-1</a>
                             </li>
-                            <li>
+                            <li className='navbar-options'>
                                 <a href="#project-2">Project-2</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className='navbar-options'>
                         <a href="Contact">Contact</a>
                     </li>
                 </ul>
