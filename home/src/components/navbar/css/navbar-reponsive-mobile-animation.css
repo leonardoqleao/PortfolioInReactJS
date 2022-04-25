@@ -4,10 +4,11 @@
     animation-name: navbarClose;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    background-color: var(--color-4)
 }
 @keyframes navbarClose {
-    from  { right: 0px;}  
-    to   { right: 500px;}
+    from  { width: 15vw; background-color: var(--color-1) }  
+    to   { width: 3vw;}
 }
 
 #animationInHomeOptionClose a{

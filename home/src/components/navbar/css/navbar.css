@@ -1,4 +1,4 @@
-.navbar {
+ #navbarAnimation {
     height: 100vh;
     width: 15vw;
     display: flex;
@@ -6,7 +6,8 @@
     justify-content: space-around;
     flex-direction: column;
 }
-.mobile-navbar {
+
+#navbarAnimationClose {
     height: 100vh;
     width: 3vw;
     background-color: var(--color-1);

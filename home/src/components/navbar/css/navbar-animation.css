@@ -6,8 +6,8 @@
     animation-iteration-count: 1;
 }
 @keyframes navbar {
-    from   { right: 500px; background-color: var(--color-4)}
-    to  { right:0px}  
+    from   { width: 3vw; background-color: var(--color-4)}
+    to  { width: 15vw}  
 }
 
 #animationInHomeOption a{
