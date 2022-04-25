@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import './css/navbar.css'
+import './css/navbar.css';
+import './css/navbar-animation.css'
 
 class Navbar extends Component {
 
@@ -8,14 +9,14 @@ class Navbar extends Component {
         return (
             <nav className='navbar'>
                 <ul className='navbarUl1'>
-                    <li className='navbar-options'>
+                    <li id='animationInHomeOption' className='navbar-options'>
                         <a href="#home">Home</a>
 
                     </li>
-                    <li className='navbar-options'>
+                    <li id='animationInProfileOption' className='navbar-options'>
                         <a href="#profile">Profile</a>
                     </li>
-                    <li className='navbar-options'>
+                    <li id='animationInProjectsOption' className='navbar-options'>
                         <a href="#projects">Projects</a>
                         <ul className='navbarUl2'>
                             <li className='navbar-options'>
@@ -26,7 +27,7 @@ class Navbar extends Component {
                             </li>
                         </ul>
                     </li>
-                    <li className='navbar-options'>
+                    <li id='animationInContactOption' className='navbar-options'>
                         <a href="Contact">Contact</a>
                     </li>
                 </ul>

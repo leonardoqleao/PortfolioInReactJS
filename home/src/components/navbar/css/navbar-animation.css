@@ -1,0 +1,42 @@
+.navbar { overflow: hidden;}
+#animationInHomeOption a{
+    position: relative;
+    animation-name: homeOption;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+@keyframes homeOption {
+    from   { right:200px; color: var(--color-1);}
+    to  { right:0px;}  
+}
+#animationInProfileOption a{
+    position: relative;
+    animation-name: profileOption;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+}
+@keyframes profileOption {
+    from   { right:200px; color: var(--color-1);}
+    to  { right:0px;}  
+}
+#animationInProjectsOption a{
+    position: relative;
+    animation-name: projectsOption;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes projectsOption {
+    from   { right:200px; color: var(--color-1);}
+    to  { right:0px;}  
+}
+#animationInContactOption a{
+    position: relative;
+    animation-name: contactOption;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+}
+@keyframes contactOption {
+    from   { right:200px; color: var(--color-1);}
+    to  { right:0px;}  
+}
+
