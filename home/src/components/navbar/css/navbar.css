@@ -1,18 +1,3 @@
-#navbarAnimation {
-    height: 100vh;
-    width: 15vw;
-    display: flex;
-    background-color: var(--color-1);
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-#navbarAnimationClose {
-    height: 100vh;
-    width: 3vw;
-    background-color: var(--color-1);
-}
-
 .navbarUl1 {
     width: 100%;
     display: flex;
