@@ -2,7 +2,7 @@
 #navbarAnimation {
     position: relative;
     animation-name: navbar;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 @keyframes navbar {
@@ -15,7 +15,7 @@
     color: var(--color-1);
     background-color:var(--color-6);
     animation-name: homeOption;
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
 @keyframes homeOption {
@@ -25,7 +25,7 @@
 }
 #animationInProfileOption a{
     animation-name: profileOption;
-    animation-duration: 3.9s;
+    animation-duration: 2.9s;
     animation-iteration-count: 1;
 }
 @keyframes profileOption {
@@ -35,7 +35,7 @@
 }
 #animationInProjectsOption a{
     animation-name: projectsOption;
-    animation-duration: 4.3s;
+    animation-duration: 3.3s;
     animation-iteration-count: 1;
 }
 @keyframes projectsOption {
@@ -45,7 +45,7 @@
 }
 #animationInContactOption a{
     animation-name: contactOption;
-    animation-duration: 4.7s;
+    animation-duration: 3.7s;
     animation-iteration-count: 1;
 }
 @keyframes contactOption {
