@@ -2,9 +2,9 @@ import { Component } from "react"
 
 export default class OptionHome extends Component {
     render() {
-        const {options, home} = this.props
+        const { options } = this.props
         return (
-            <li id={home} className={options}>
+            <li id='animationInHomeOption' className={options}>
                 <a href="#home">Home</a>
             </li>
         )

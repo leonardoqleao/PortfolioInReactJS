@@ -2,9 +2,9 @@ import { Component } from "react";
 
 export default class OptionProjects extends Component {
     render() {
-        const {options, projects} = this.props
+        const { options } = this.props
         return (
-            <li id={projects} className={options}>
+            <li id='animationInProjectsOption' className={options}>
                 <a href="#projects">Projects</a>
             </li>
         )

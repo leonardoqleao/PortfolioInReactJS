@@ -4,7 +4,6 @@ import './css/navbar.css';
 import './css/navbar-animation.css';
 import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
-import './css/navbar-reponsive-mobile-animation.css'
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -15,15 +14,7 @@ export default class Navbar extends Component {
                     activeIcon: 'navbarIconActive',
                     icon: 'icon'
                 },
-                options: {
-                    options: 'navbar-options',
-                    ids: {
-                        home: 'animationInHomeOption',
-                        profile: 'animationInProfileOption',
-                        projects: 'animationInProjectsOption',
-                        contact: 'animationInContactOption'
-                    }
-                },
+                options:'navbar-options',
                 navbar:'navbarAnimation'
             }
         }
@@ -36,15 +27,7 @@ export default class Navbar extends Component {
                         icon: 'mobile-icon',
                         activeIcon: ''
                     },
-                    options: {
-                        options: 'mobile-navbar-options',
-                        ids: {
-                            home: 'animationInHomeOptionClose',
-                            profile: 'animationInProfileOptionClose',
-                            projects: 'animationInProjectsOptionClose',
-                            contact: 'animationInContactOptionClose'
-                        }
-                    },
+                    options:'mobile-navbar-options',
                     navbar: 'navbarAnimationClose'
                 }
             })
@@ -55,23 +38,14 @@ export default class Navbar extends Component {
                         icon: 'icon',
                         activeIcon: 'navbarIconActive'
                     },
-                    options: {
-                        options: 'navbar-options',
-                        ids: {
-                            home: 'animationInHomeOption',
-                            profile: 'animationInProfileOption',
-                            projects: 'animationInProjectsOption',
-                            contact: 'animationInContactOption'
-                        }
-                    },
+                    options: 'navbar-options',
                     navbar: 'navbarAnimation'
                 }
             })
         }
     }
     render() {
-        const { options } = this.state.mobileResponsive.options
-        const { ids } = this.state.mobileResponsive.options
+        const { options } = this.state.mobileResponsive
         const { navbar } = this.state.mobileResponsive
         const { icon, activeIcon } = this.state.mobileResponsive.icon
         return (
@@ -79,7 +53,7 @@ export default class Navbar extends Component {
                 <div onClick={this.onClickmobileResponsive} class={icon}>
                     <div class={"navbarIcon " + activeIcon}><span></span></div>
                 </div>
-                <NavbarOptions options={options} ids={ids} />
+                <NavbarOptions options={options}/>
             </nav>
         )
     }
