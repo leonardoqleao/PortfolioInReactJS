@@ -50,9 +50,6 @@
     #navbarAnimationClose {
         width: 12vw;
     }
-    .mobile-navbar-options a {
-        display: none;
-    }
     @keyframes navbarClose {
         from  { width: 100vw; background-color: var(--color-1) }  
         to   { width: 12vw;}

@@ -1,3 +1,4 @@
+#navbarAnimationClose, #navbarAnimation { overflow: hidden;}
 #navbarAnimation {
     position: relative;
     animation-name: navbar;
@@ -52,7 +53,8 @@
 @keyframes projectsOption {
     0% { right: 400px; color: var(--color-1);}
     50% { right: 400px; color: var(--color-1); }
-    100% { right: 0px; }}
+    100% { right: 0px; }
+}
 #animationInContactOption a {
     animation-name: contactOption;
     animation-duration: 3.7s;

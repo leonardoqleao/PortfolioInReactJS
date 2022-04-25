@@ -1,13 +1,3 @@
-#navbarAnimationClose, #navbarAnimation { overflow: hidden;}
-#navbarAnimationClose {
-    position: relative;
-    animation-name: navbarClose;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    background-color: var(--color-4)
-}
-
-
 #animationInHomeOptionClose a{
     margin: 0 0 1px 0;
     color: var(--color-1);
