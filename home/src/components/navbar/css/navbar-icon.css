@@ -11,12 +11,26 @@
   top: 3%;
   right: 10%;
   transform: translateY(-50%);
+  animation-name: iconopen;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes iconopen {
+  from  { right: 30% }  
+  to   { right: 10%}
 }
 .mobile-icon {
   position: absolute;
   top: 3%;
   right: 30%;
   transform: translateY(-50%);
+  animation-name: iconclose;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes iconclose {
+  from  { right: 10% }  
+  to   { right: 30%}
 }
 
 .navbarIcon {

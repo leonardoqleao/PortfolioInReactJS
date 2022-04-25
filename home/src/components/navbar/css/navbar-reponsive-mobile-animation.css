@@ -1,4 +1,4 @@
-.navbar { overflow: hidden;}
+#navbarAnimationClose, #navbarAnimation { overflow: hidden;}
 #navbarAnimationClose {
     position: relative;
     animation-name: navbarClose;
@@ -6,10 +6,7 @@
     animation-iteration-count: 1;
     background-color: var(--color-4)
 }
-@keyframes navbarClose {
-    from  { width: 15vw; background-color: var(--color-1) }  
-    to   { width: 3vw;}
-}
+
 
 #animationInHomeOptionClose a{
     margin: 0 0 1px 0;

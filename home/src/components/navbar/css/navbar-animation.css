@@ -1,57 +1,65 @@
-.navbar { overflow: hidden;}
 #navbarAnimation {
     position: relative;
     animation-name: navbar;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
-@keyframes navbar {
-    from   { width: 3vw; background-color: var(--color-4)}
-    to  { width: 15vw}  
+#navbarAnimationClose {
+    position: relative;
+    animation-name: navbarClose;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    background-color: var(--color-4)
 }
-
-#animationInHomeOption a{
+@media (min-width: 1080px) {
+    @keyframes navbar {
+        from { width: 3vw; background-color: var(--color-4); }
+        to { width: 15vw; }
+    }
+    @keyframes navbarClose {
+        from  { width: 15vw; background-color: var(--color-1); }  
+        to   { width: 3vw;}
+    }
+}
+#animationInHomeOption a {
     margin: 0 0 1px 0;
     color: var(--color-1);
-    background-color:var(--color-6);
+    background-color: var(--color-6);
     animation-name: homeOption;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
 }
 @keyframes homeOption {
-    0%   { top:800px; color: var(--color-1);}
-    50%   { top:800px; color: var(--color-1);}
-    100%  { top:0px;}  
+    0% { top: 800px; color: var(--color-1); }
+    50% { top: 800px; color: var(--color-1); }
+    100% { top: 0px; }
 }
-#animationInProfileOption a{
+#animationInProfileOption a {
     animation-name: profileOption;
     animation-duration: 2.9s;
     animation-iteration-count: 1;
 }
 @keyframes profileOption {
-    0%   { left:400px; color: var(--color-1);}
-    50%   { left:400px; color: var(--color-1);}
-    100%  { left:0px;}  
+    0% { left: 400px; color: var(--color-1);}
+    50% { left: 400px; color: var(--color-1); }
+    100% { left: 0px;}
 }
-#animationInProjectsOption a{
+#animationInProjectsOption a {
     animation-name: projectsOption;
     animation-duration: 3.3s;
     animation-iteration-count: 1;
 }
 @keyframes projectsOption {
-    0%   { right:400px; color: var(--color-1);}
-    50%   { right:400px; color: var(--color-1);}
-    100%  { right:0px;}   
-}
-#animationInContactOption a{
+    0% { right: 400px; color: var(--color-1);}
+    50% { right: 400px; color: var(--color-1); }
+    100% { right: 0px; }}
+#animationInContactOption a {
     animation-name: contactOption;
     animation-duration: 3.7s;
     animation-iteration-count: 1;
 }
 @keyframes contactOption {
-    0%   { left:400px; color: var(--color-1);}
-    50%   { left:400px; color: var(--color-1);}
-    100%  { left:0px;}    
+    0% { left: 400px; color: var(--color-1);}
+    50% { left: 400px; color: var(--color-1); }
+    100% { left: 0px; }
 }
-
-
