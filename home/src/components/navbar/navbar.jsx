@@ -6,8 +6,8 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav>
-                <ul>
+            <nav className='navbar'>
+                <ul className='navbarUl1'>
                     <li>
                         <a href="#home">Home</a>
 
@@ -17,7 +17,7 @@ class Navbar extends Component {
                     </li>
                     <li>
                         <a href="#projects">projects</a>
-                        <ul>
+                        <ul className='navbarUl2'>
                             <li>
                                 <a href="#project-1">Project-1</a>
                             </li>
