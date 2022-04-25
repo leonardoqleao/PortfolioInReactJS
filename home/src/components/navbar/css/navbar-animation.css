@@ -17,8 +17,8 @@
     animation-iteration-count: 1;
 }
 @keyframes homeOption {
-    0%   { right:300px; color: var(--color-1);}
-    50%   { right:300px; color: var(--color-1);}
+    0%   { right:400px; color: var(--color-1);}
+    50%   { right:400px; color: var(--color-1);}
     100%  { right:0px;}  
 }
 #animationInProfileOption a{
@@ -28,8 +28,8 @@
     animation-iteration-count: 1;
 }
 @keyframes profileOption {
-    0%   { left:300px; color: var(--color-1);}
-    50%   { left:300px; color: var(--color-1);}
+    0%   { left:400px; color: var(--color-1);}
+    50%   { left:400px; color: var(--color-1);}
     100%  { left:0px;}  
 }
 #animationInProjectsOption a{
@@ -39,8 +39,8 @@
     animation-iteration-count: 1;
 }
 @keyframes projectsOption {
-    0%   { right:300px; color: var(--color-1);}
-    50%   { right:300px; color: var(--color-1);}
+    0%   { right:400px; color: var(--color-1);}
+    50%   { right:400px; color: var(--color-1);}
     100%  { right:0px;}   
 }
 #animationInContactOption a{
@@ -50,8 +50,8 @@
     animation-iteration-count: 1;
 }
 @keyframes contactOption {
-    0%   { left:300px; color: var(--color-1);}
-    50%   { left:300px; color: var(--color-1);}
+    0%   { left:400px; color: var(--color-1);}
+    50%   { left:400px; color: var(--color-1);}
     100%  { left:0px;}    
 }
 
