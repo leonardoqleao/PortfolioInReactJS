@@ -6,6 +6,11 @@
     justify-content: space-around;
     flex-direction: column;
 }
+.mobile-navbar {
+    height: 100vh;
+    width: 3vw;
+    background-color: var(--color-1);
+}
 
 .navbarUl1 {
     width: 100%;
@@ -25,6 +30,9 @@
     font-size: x-large;
     position: relative;
     box-sizing: border-box;
+}
+.mobile-navbar-options a {
+    display: none;
 }
 
 .navbar-options a:hover {

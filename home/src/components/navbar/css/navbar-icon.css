@@ -12,6 +12,12 @@
   right: 10%;
   transform: translateY(-50%);
 }
+.mobile-icon {
+  position: absolute;
+  top: 3%;
+  right: 30%;
+  transform: translateY(-50%);
+}
 
 .navbarIcon {
   margin: 5% 0 0 5%;
