@@ -2,9 +2,9 @@ import { Component } from "react";
 
 export default class OptionContact extends Component {
     render() {
-        const {options} = this.props
+        const {options, contact} = this.props
         return (
-            <li id='animationInContactOption' className={options}>
+            <li id={contact} className={options}>
                 <a href="Contact">Contact</a>
             </li>
         )

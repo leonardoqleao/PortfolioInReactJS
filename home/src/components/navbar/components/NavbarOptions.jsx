@@ -7,12 +7,13 @@ import OptionProjects from "./OptionProjects";
 export default class NavbarOptions extends Component {
     render() {
         const {options} = this.props
+        const {home, profile, projects, contact} = this.props.ids
         return (
             <ul className='navbarUl1'>
-                <OptionHome options={options}/>
-                <OptionProfile options={options}/>
-                <OptionProjects options={options}/>
-                <OptionContact options={options}/>
+                <OptionHome home={home} options={options}/>
+                <OptionProfile profile={profile} options={options}/>
+                <OptionProjects projects={projects} options={options}/>
+                <OptionContact contact={contact} options={options}/>
             </ul>
         )
     }
