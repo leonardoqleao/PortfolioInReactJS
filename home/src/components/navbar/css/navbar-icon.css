@@ -35,7 +35,7 @@
 .navbarIcon:after {
   position: absolute;
   display: block;
-  background-color: #f0f0f0;
+  background-color: #000;
   border-radius: 0.125em;
   transition: all 0.2s;
 }
@@ -81,6 +81,7 @@
 }
 
 .navbarIcon.navbarIconActive:before {
+  background-color: #f0f0f0;
   top: 50%;
   transform: translate3D(0, -50%, 0) rotate(45deg);
 }
@@ -90,6 +91,7 @@
 }
 
 .navbarIcon.navbarIconActive:after {
+  background-color: #f0f0f0;
   bottom: 50%;
   transform: translate3D(0, 50%, 0) rotate(-45deg);
 }
