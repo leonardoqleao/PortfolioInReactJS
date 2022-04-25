@@ -3,14 +3,23 @@ import Navbar from '../../components/navbar/Navbar';
 import './css/Home.css';
 
 class Home extends Component {
-  // constructor(props){
-  //   super(props)
-  // }
-  // state = {}
+  constructor(props) {
+    super(props);
+    this.state = {
+      icon: 'navbarIconActive'
+    }
+  }
+  onClickIcon = () => {
+    if (this.state.icon === '') {
+      this.setState({icon: 'navbarIconActive'})
+    } else {
+      this.setState({icon: ''})
+    }
+  }
   render() {
     return (
       <div className="Home">
-        <Navbar/>
+        <Navbar icon={this.state.icon} onClickIcon={this.onClickIcon} />
       </div>
     )
   }

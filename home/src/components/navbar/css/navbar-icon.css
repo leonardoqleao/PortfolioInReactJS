@@ -1,0 +1,91 @@
+.navbarIcon {
+  display: inline-block;
+}
+
+.navbarIcon+.navbarIcon {
+  margin-left: 2.5rem;
+}
+
+.icon {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+.navbarIcon {
+  margin: 5% 0 0 5%;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbarIcon:before,
+.navbarIcon:after {
+  content: "";
+}
+
+.navbarIcon span,
+.navbarIcon:before,
+.navbarIcon:after {
+  position: absolute;
+  display: block;
+  background-color: #f0f0f0;
+  border-radius: 0.125em;
+  transition: all 0.2s;
+}
+
+.navbarIcon {
+  width: 1.7em;
+  height: 1.2em;
+}
+
+.navbarIcon span,
+.navbarIcon:before,
+.navbarIcon:after {
+  left: 0;
+  transform: translate3D(0, 0, 0);
+  width: 100%;
+  height: 0.120em;
+}
+
+.navbarIcon:before {
+  top: 0;
+}
+
+.navbarIcon span {
+  top: 50%;
+  transform: translate3D(0, -50%, 0);
+}
+
+.navbarIcon:after {
+  bottom: 0;
+}
+
+.navbarIcon:hover:before {
+  top: -10%;
+}
+
+.navbarIcon:hover:after {
+  bottom: -10%;
+}
+
+.navbarIcon:before,
+.navbarIcon:after {
+  transform-origin: center;
+}
+
+.navbarIcon.navbarIconActive:before {
+  top: 50%;
+  transform: translate3D(0, -50%, 0) rotate(45deg);
+}
+
+.navbarIcon.navbarIconActive span {
+  opacity: 0;
+}
+
+.navbarIcon.navbarIconActive:after {
+  bottom: 50%;
+  transform: translate3D(0, 50%, 0) rotate(-45deg);
+}
+
+/*# sourceMappingURL=navbar-icon.css.map */
