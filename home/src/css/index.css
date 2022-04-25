@@ -1,3 +1,14 @@
+:root{
+  --color-1: #14140F;
+  --color-2: #022840;
+  --color-3: #2C394B;
+  --color-4: #A3CCAB;
+  --color-5: #C9DFF2;
+  --color-6: #ff6f00;
+}
+*::selection{/*Alterando a cor de fundo dos textos selecionados.*/
+  background-color: rgba(52, 179, 145, 0.378);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav, ul, li, a{
+  list-style-type: none;
+  text-decoration: none;
 }
