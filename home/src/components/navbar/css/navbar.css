@@ -1,16 +1,24 @@
+:root{
+    --color-1: #082032;
+    --color-2: #2C394B;
+    --color-3: #334756;
+    --color-4: #FF4C29;
+}
+
 nav, ul, li, a{
     list-style-type: none;
     text-decoration: none;
 }
 .navbar {
     height: 100vh;
-    width: 25vw;
+    width: 22vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(19, 19, 19);
+    background-color: var(--color-1);
 }
 .navbarUl1 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -19,17 +27,27 @@ nav, ul, li, a{
     align-items: center;
 }
 .navbarUl1 li {
-    margin: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 6% 0 6% 0;
 }
 .navbarUl1 li a {
-    color: rgb(19, 19, 19);
+    text-align: center;
+    width: 100%;
+    color: #082032;
     font-size: xx-large;
     text-shadow: 
-        0 0 2px rgb(129, 177, 184), 
-        0 0 2px rgb(129, 177, 184),
-        0 0 2px rgb(129, 177, 184), 
-        0 0 2px rgb(129, 177, 184);
+        0 0 2px #fff, 
+        0 0 2px #fff,
+        0 0 2px #fff, 
+        0 0 2px #fff;
     
+}
+li:hover{
+    background-color:var(--color-4);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
 .navbarUl2{
     display: none;
