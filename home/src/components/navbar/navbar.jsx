@@ -16,7 +16,7 @@ class Navbar extends Component {
                         <a href="#profile">Profile</a>
                     </li>
                     <li>
-                        <a href="#projects">projects</a>
+                        <a href="#projects">Projects</a>
                         <ul className='navbarUl2'>
                             <li>
                                 <a href="#project-1">Project-1</a>
@@ -28,9 +28,6 @@ class Navbar extends Component {
                     </li>
                     <li>
                         <a href="Contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#links">Links</a>
                     </li>
                 </ul>
             </nav>
