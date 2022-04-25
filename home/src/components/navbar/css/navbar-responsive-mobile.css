@@ -7,14 +7,14 @@
         flex-direction: column;
     }
     #navbarAnimationClose {
-        width: 3.5vw;
+        width: 6vw;
     }
     @keyframes navbarClose {
         from  { width: 18vw; background-color: var(--color-1) }  
-        to   { width: 3.5vw;}
+        to   { width: 6vw;}
     }
     @keyframes navbar {
-        from   { width: 3.5vw; background-color: var(--color-4)}
+        from   { width: 6vw; background-color: var(--color-4)}
         to  { width: 18vw}  
     }
 }
