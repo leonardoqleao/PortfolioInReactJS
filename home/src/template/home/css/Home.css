@@ -1,12 +1,5 @@
-:root{
-    --color-1: #082032;
-    --color-2: #2C394B;
-    --color-3: #334756;
-    --color-4: #FF4C29;
-}
-
 .Home{
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     display: flex;
     flex-direction: column;
     align-content: flex-start;
