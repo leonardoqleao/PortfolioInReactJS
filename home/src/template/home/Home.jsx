@@ -6,20 +6,27 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      icon: 'navbarIconActive'
+      mobileResponsive: {
+        icon: {
+          activeIcon: 'navbarIconActive',
+          icon: 'icon'
+        },
+        options: 'navbar-options',
+        navbar: 'navbar'
+      }
     }
   }
-  onClickIcon = () => {
-    if (this.state.icon === '') {
-      this.setState({icon: 'navbarIconActive'})
+  onClickmobileResponsive = () => {
+    if (this.state.mobileResponsive.icon.activeIcon === 'navbarIconActive') {
+      this.setState({ mobileResponsive: { icon: { icon: 'mobile-icon', activeIcon: '' }, options: 'mobile-navbar-options', navbar: 'mobile-navbar' } })
     } else {
-      this.setState({icon: ''})
+      this.setState({ mobileResponsive: { icon: { icon: 'icon', activeIcon: 'navbarIconActive' }, options: 'navbar-options', navbar: 'navbar' } })
     }
   }
   render() {
     return (
       <div className="Home">
-        <Navbar icon={this.state.icon} onClickIcon={this.onClickIcon} />
+        <Navbar mobileResponsive={this.state.mobileResponsive} onClickmobileResponsive={this.onClickmobileResponsive} />
       </div>
     )
   }
