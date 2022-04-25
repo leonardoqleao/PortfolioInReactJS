@@ -6,7 +6,7 @@ import './css/navbar-animation.css'
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className='navbar'>
+            <nav id='navbarAnimation' className='navbar'>
                 <NavbarOptions/>
             </nav>
         )
