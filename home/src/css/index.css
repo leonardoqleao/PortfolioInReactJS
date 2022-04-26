@@ -1,7 +1,16 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Water+Brush&display=swap');
+
 :root{
   --color-1: #14140F;
   --color-2: #022840;
-  --color-3: #2C394B;
+  --color-3: #4c4c4c;
   --color-4: #A3CCAB;
   --color-5: #C9DFF2;
   --color-6: #ff6f00;
@@ -17,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-nav, ul, li, a{
+ol, ul, li, a{
   list-style-type: none;
   text-decoration: none;
 }
