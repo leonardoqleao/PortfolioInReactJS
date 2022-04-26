@@ -1,15 +1,15 @@
 import { Component } from 'react';
 import Navbar from '../../components/navbar/Navbar';
-import './css/Home.css';
+import './css/HomePage.css';
+import Home from '../../components/home/Home';
 
-class Home extends Component {
+export default class HomePage extends Component {
   render() {
     return (
       <div className="Home">
         <Navbar/>
+        <Home/>
       </div>
     )
   }
 }
-
-export default Home;
