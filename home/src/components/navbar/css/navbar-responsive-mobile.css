@@ -39,7 +39,7 @@
         to  { width: 25vw }  
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 520px) {
     #navbarAnimation {
         width: 100vw;
         display: flex;

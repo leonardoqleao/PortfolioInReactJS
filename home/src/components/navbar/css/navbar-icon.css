@@ -32,7 +32,11 @@
   from  { right: 10% }  
   to   { right: 30%}
 }
-
+@media (max-height: 420px) {
+  .mobile-icon, .icon{
+    top: 7%;
+  }
+}
 .navbarIcon {
   margin: 5% 0 0 5%;
   position: relative;
