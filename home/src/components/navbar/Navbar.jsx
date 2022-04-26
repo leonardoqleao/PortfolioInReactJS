@@ -10,34 +10,25 @@ export default class Navbar extends Component {
         super(props);
         this.state = {
             mobileResponsive: {
-                icon: {
-                    activeIcon: 'navbarIconActive',
-                    icon: 'icon'
-                },
-                options:'navbar-options',
-                navbar:'navbarAnimation'
+                activeIcon: 'open',
+                options: 'navbar-options',
+                navbar: 'navbarAnimation'
             }
         }
     }
     onClickmobileResponsive = () => {
-        if (this.state.mobileResponsive.icon.activeIcon === 'navbarIconActive') {
+        if (this.state.mobileResponsive.activeIcon === 'open') {
             this.setState({
                 mobileResponsive: {
-                    icon: {
-                        icon: 'mobile-icon',
-                        activeIcon: ''
-                    },
-                    options:'mobile-navbar-options',
+                    activeIcon: '',
+                    options: 'mobile-navbar-options',
                     navbar: 'navbarAnimationClose'
                 }
             })
         } else {
             this.setState({
                 mobileResponsive: {
-                    icon: {
-                        icon: 'icon',
-                        activeIcon: 'navbarIconActive'
-                    },
+                    activeIcon: 'open',
                     options: 'navbar-options',
                     navbar: 'navbarAnimation'
                 }
@@ -47,13 +38,17 @@ export default class Navbar extends Component {
     render() {
         const { options } = this.state.mobileResponsive
         const { navbar } = this.state.mobileResponsive
-        const { icon, activeIcon } = this.state.mobileResponsive.icon
+        const { activeIcon } = this.state.mobileResponsive
         return (
             <nav id={navbar} >
-                <div onClick={this.onClickmobileResponsive} class={icon}>
-                    <div class={"navbarIcon " + activeIcon}><span></span></div>
+                <div onClick={this.onClickmobileResponsive}  class="icon">
+                    <div class={"navicon " + activeIcon}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <NavbarOptions options={options}/>
+                <NavbarOptions options={options} />
             </nav>
         )
     }
