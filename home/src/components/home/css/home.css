@@ -1,0 +1,23 @@
+.name{
+    display: flex;
+    color: rgb(51, 51, 51);
+    font-family: var(--font-1);
+    margin: 15% 0 0 25%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor:default;
+}
+.name  div{
+    display: inline-block;
+    font-size: 5rem;
+}
+.test{
+    color: rgb(51, 51, 51);
+    animation-name: rubberBand;
+    animation-duration: 2s;
+}
+
+.displayNone{
+    opacity: 0;
+}

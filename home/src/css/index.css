@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Water+Brush&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script&family=El+Messiri&family=La+Belle+Aurore&family=Major+Mono+Display&family=Monoton&family=Square+Peg&display=swap');
 :root{
   --color-1: #14140F;
   --color-2: #022840;
@@ -14,6 +12,13 @@
   --color-4: #A3CCAB;
   --color-5: #C9DFF2;
   --color-6: #ff6f00;
+  --font-1: 'Alegreya', serif;
+  --font-2: 'Dancing Script', cursive;
+  --font-3: 'El Messiri', sans-serif;
+  --font-4: 'La Belle Aurore', cursive;
+  --font-5: 'Major Mono Display', monospace;
+  --font-6: 'Monoton', cursive;
+  --font-7: 'Square Peg', cursive;
 }
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
