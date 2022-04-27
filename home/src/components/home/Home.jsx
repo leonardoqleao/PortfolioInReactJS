@@ -15,7 +15,7 @@ export default class Home extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ latter: 'test' })
-        }, 3200)
+        }, 4200)
     }
     mouseOver = (e) => {
         e.target.className = this.state.latter
