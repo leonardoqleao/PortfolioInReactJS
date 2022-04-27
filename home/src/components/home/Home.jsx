@@ -14,18 +14,14 @@ export default class Home extends Component {
     }
     componentDidMount() {
         setTimeout(() => {
-            this.setState({ latter: 'test2' })
-        }, 3500)
+            this.setState({ latter: 'test' })
+        }, 3200)
     }
     mouseOver = (e) => {
         e.target.className = this.state.latter
-        setTimeout(() =>{
+        setTimeout(()=>{
             e.target.className = ''
         }, 1500)
-        
-    }
-    selec =(e)=>{
-        e.target.style.display = 'none'
     }
     render() {
 
@@ -33,33 +29,33 @@ export default class Home extends Component {
             <div>
                 <div className="name">
                     <h1 className="blockName">
-                        <div onMouseOver={this.mouseOver} className={this.state.latter} onClick={this.selec}>H</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>i</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>,</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>H</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>i</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>,</div>
                         <div className="displayNone">-</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>I</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>'</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>m</div><br />
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>L</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>e</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>o</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>n</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>a</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>r</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>d</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>o</div><br />
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>w</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>e</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>b</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>I</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>'</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>m</div><br />
+                        <div onMouseOver={this.mouseOver} className='bom'>L</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>o</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>n</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>a</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>r</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>d</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>o</div><br />
+                        <div onMouseOver={this.mouseOver} className='bom'>w</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>b</div>
                         <div className="displayNone">-</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>d</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>e</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>v</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>e</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>l</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>p</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>e</div>
-                        <div onMouseOver={this.mouseOver} className={this.state.latter}>r</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>d</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>v</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>l</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>p</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>r</div>
                     </h1>
                 </div>
             </div>
