@@ -9,7 +9,8 @@ export default class Home extends Component {
         super(props);
         this.state = {
             latter: 'bom',
-            test: 'opacity: 1;'
+            test: 'opacity: 1;',
+            time: 4000
         }
     }
     componentDidMount() {
@@ -21,7 +22,8 @@ export default class Home extends Component {
         e.target.className = this.state.latter
         setTimeout(()=>{
             e.target.className = ''
-        }, 1500)
+            this.setState({time: 1500})
+        }, this.state.time)
     }
     render() {
 
@@ -44,7 +46,7 @@ export default class Home extends Component {
                         <div onMouseOver={this.mouseOver} className='bom'>r</div>
                         <div onMouseOver={this.mouseOver} className='bom'>d</div>
                         <div onMouseOver={this.mouseOver} className='bom'>o</div><br />
-                        <div onMouseOver={this.mouseOver} className='bom'>w</div>
+                        {/* <div onMouseOver={this.mouseOver} className='bom'>w</div>
                         <div onMouseOver={this.mouseOver} className='bom'>e</div>
                         <div onMouseOver={this.mouseOver} className='bom'>b</div>
                         <div className="displayNone">-</div>
@@ -55,7 +57,7 @@ export default class Home extends Component {
                         <div onMouseOver={this.mouseOver} className='bom'>l</div>
                         <div onMouseOver={this.mouseOver} className='bom'>p</div>
                         <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>r</div>
+                        <div onMouseOver={this.mouseOver} className='bom'>r</div> */}
                     </h1>
                 </div>
             </div>
