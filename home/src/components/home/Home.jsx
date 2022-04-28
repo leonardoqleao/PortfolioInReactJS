@@ -1,7 +1,10 @@
 import { Component } from "react";
+import React from 'react';
+import { rainMeteorFactory } from "./components/func/meteorRain.js";
 import './css/home.css';
 import './css/keyframe.css';
 import './css/name-animation.css';
+import './css/rain-animation.css';
 
 
 export default class Home extends Component {
@@ -10,25 +13,42 @@ export default class Home extends Component {
         this.state = {
             latter: 'bom',
             test: 'opacity: 1;',
-            time: 4000
+            time: 3600,
+            numbers: 0,
+            rainMeteorNumber: []
         }
     }
+    metorAlt = (e) => {
+        this.setState({
+            numbers: e.target.value
+        })
+        console.log(this.state.numbers)
+    }
     componentDidMount() {
+        const test = rainMeteorFactory(this.state.numbers)
+        this.setState({
+            rainMeteorNumber: test
+        })
         setTimeout(() => {
             this.setState({ latter: 'test' })
-        }, 4200)
+        }, 3600)
+    }
+    
+    componentDidUpdate() {
+        
     }
     mouseOver = (e) => {
         e.target.className = this.state.latter
-        setTimeout(()=>{
+        setTimeout(() => {
             e.target.className = ''
-            this.setState({time: 1500})
+            this.setState({ time: 1500 })
         }, this.state.time)
     }
+
     render() {
 
         return (
-            <div>
+            <div className="home">
                 <div className="name">
                     <h1 className="blockName">
                         <div onMouseOver={this.mouseOver} className='bom'>H</div>
@@ -45,21 +65,19 @@ export default class Home extends Component {
                         <div onMouseOver={this.mouseOver} className='bom'>a</div>
                         <div onMouseOver={this.mouseOver} className='bom'>r</div>
                         <div onMouseOver={this.mouseOver} className='bom'>d</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>o</div><br />
-                        {/* <div onMouseOver={this.mouseOver} className='bom'>w</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>b</div>
-                        <div className="displayNone">-</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>d</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>v</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>l</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>p</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                        <div onMouseOver={this.mouseOver} className='bom'>r</div> */}
+                        <div onMouseOver={this.mouseOver} className='bom' onAnimationEnd={this.rainMeteor} >o</div><br />
                     </h1>
                 </div>
+                <div id="rain" >
+                    {this.state.rainMeteorNumber.map(n => (
+                        <div className="rainchild" style={{ left: n.left, top: n.top, }} ></div>
+                    ))}
+                </div>
+                <form action="">
+                    <input type="number" value={this.state.value} onChange={this.metorAlt} />
+                    <input type="submit" />
+                </form>
+
             </div>
         )
     }
