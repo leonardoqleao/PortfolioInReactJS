@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Libre+Bodoni&family=Lora&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Orelega+One&family=PT+Serif&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Square+Peg&family=Tapestry&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200&family=Libre+Bodoni&family=Lora&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Orelega+One&family=PT+Serif&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Square+Peg&family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script&family=El+Messiri&family=La+Belle+Aurore&family=Major+Mono+Display&family=Monoton&family=Square+Peg&display=swap');
 :root{
   --color-1: #14140F;
@@ -12,13 +17,24 @@
   --color-4: #A3CCAB;
   --color-5: #C9DFF2;
   --color-6: #ff6f00;
-  --font-1: 'Alegreya', serif;
-  --font-2: 'Dancing Script', cursive;
-  --font-3: 'El Messiri', sans-serif;
-  --font-4: 'La Belle Aurore', cursive;
-  --font-5: 'Major Mono Display', monospace;
-  --font-6: 'Monoton', cursive;
-  --font-7: 'Square Peg', cursive;
+  --font-1: 'Bebas Neue', cursive;
+  --font-2: 'Inconsolata', monospace;
+  --font-3: 'Libre Bodoni', serif;
+  --font-4: 'Lora', serif;
+  --font-5: 'Nunito', sans-serif;
+  --font-6: 'Open Sans', sans-serif;
+  --font-7: 'Orelega One', cursive;
+  --font-8: 'PT Serif', serif;
+  --font-9: 'Roboto', sans-serif;
+  --font-10: 'Roboto Mono', monospace;
+  --font-11: 'Roboto Slab', serif;
+  --font-12: 'Square Peg', cursive;
+  --font-13: 'Alegreya', serif;
+  --font-14: 'Dancing Script', cursiv;
+  --font-15: 'El Messiri', sans-serif;
+  --font-16: 'La Belle Aurore', cursive;
+  --font-17: 'Major Mono Display', monospace;
+  --font-18: 'Monoton', cursive;
 }
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
   background-color: rgba(52, 179, 145, 0.378);
