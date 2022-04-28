@@ -6,7 +6,7 @@ import Home from '../../components/home/Home';
 export default class HomePage extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="HomePage">
         <Navbar/>
         <Home/>
       </div>
