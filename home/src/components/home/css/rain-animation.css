@@ -7,17 +7,149 @@
     overflow: hidden;
 }
 
-.rainchild {
+.rainchild-1 {
     position: absolute;
     display: inline-block;
     width: 3px;
     height: 40px;
     background-image: linear-gradient(to top, rgba(255, 174, 0, 0.753), var(--color-6));
     border-radius: 40%;
-    animation: rain 5s ease-in-out;
+    animation: rain 3.5s ease-in-out;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-delay: 2s;
+}
+.rainchild-2 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(25, 0, 255, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 2.3s;
+}
+.rainchild-3 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 2.6s;
+}
+.rainchild-4 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(9, 255, 0, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 2.9s;
+}
+.rainchild-5 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(255, 0, 234, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 3.1s;
+}
+.rainchild-6 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(119, 0, 255, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 3.4s;
+}
+.rainchild-7 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(0, 110, 255, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 3.7s;
+}
+.rainchild-8 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(0, 255, 106, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+.rainchild-9 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(255, 115, 0, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 4.3s;
+}
+.rainchild-10 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(255, 0, 85, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 4.6s;
+}
+.rainchild-11 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(0, 132, 255, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 4.9s;
+}
+.rainchild-12 {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40px;
+    background-image: linear-gradient(to top, rgba(0, 255, 128, 0.753), var(--color-6));
+    border-radius: 40%;
+    animation: rain 3.5s ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 5.1s;
 }
 
 @keyframes rain {
@@ -27,7 +159,7 @@
     }
     100% {
         transform: scale(2) translate(1000px, 1000px) rotate(-50deg);
-        opacity: 0.5;
+        opacity: 0;
     }
 
 }
