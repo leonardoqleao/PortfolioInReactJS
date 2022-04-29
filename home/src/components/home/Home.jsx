@@ -2,9 +2,7 @@ import { Component } from "react";
 import './css/home.css';
 import './css/keyframe.css';
 import './css/name-animation.css';
-import './css/rain-animation.css';
-import ApresentationName from "./components/apresentationName.jsx";
-import MetorRainAnimation from "./components/MetorRainAnimation";
+import ApresentationName from "./components/ApresentationName.jsx";
 
 
 export default class Home extends Component {
@@ -12,7 +10,6 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <ApresentationName/>
-                <MetorRainAnimation/>
             </div>
         )
     }
