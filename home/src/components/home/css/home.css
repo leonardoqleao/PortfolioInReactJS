@@ -15,7 +15,7 @@
     display: inline-block;
     font-size: 5rem;
 }
-.test{
+.nameAnimation{
     animation-name: wobble;
     animation-duration: 1s;
 }

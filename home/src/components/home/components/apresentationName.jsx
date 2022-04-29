@@ -4,13 +4,13 @@ export default class ApresentationName extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            latter: 'bom',
+            latter: 'incialNameAnimation',
             time: 3600
         }
     }
     componentDidMount(){
         setTimeout(() => {
-            this.setState({ latter: 'test' })
+            this.setState({ latter: 'nameAnimation' })
         }, 3600)
     }
     mouseOver = (e) => {
@@ -24,21 +24,21 @@ export default class ApresentationName extends Component {
         return (
             <div className="name">
                 <h1 className="blockName">
-                    <div onMouseOver={this.mouseOver} className='bom'>H</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>i</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>,</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>H</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>i</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>,</div>
                     <div className="displayNone">-</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>I</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>'</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>m</div><br />
-                    <div onMouseOver={this.mouseOver} className='bom'>L</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>e</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>o</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>n</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>a</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>r</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>d</div>
-                    <div onMouseOver={this.mouseOver} className='bom'>o</div><br />
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>I</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>'</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>m</div><br />
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>L</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>e</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>o</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>n</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>a</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>r</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>d</div>
+                    <div onMouseOver={this.mouseOver} className='incialNameAnimation'>o</div><br />
                 </h1>
             </div>
         )

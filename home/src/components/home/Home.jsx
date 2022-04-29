@@ -1,4 +1,5 @@
 import { Component } from "react";
+import ReactTypingEffect from "react-typing-effect";
 import './css/home.css';
 import './css/keyframe.css';
 import './css/name-animation.css';
@@ -10,6 +11,7 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <ApresentationName/>
+                <ReactTypingEffect text={['Bom dia']}/>
             </div>
         )
     }
