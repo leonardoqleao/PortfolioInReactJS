@@ -1,71 +1,21 @@
-@keyframes animation2 {
-    0% {
-        transform: matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        opacity: 0;
-    }
-
-    3.2% {
-        transform: matrix3d(0.652, -0.763, 0, 0, 0.871, 0.501, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    4.3% {
-        transform: matrix3d(0.797, -0.614, 0, 0, 0.768, 0.649, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    6.41% {
-        transform: matrix3d(0.953, -0.325, 0, 0, 0.534, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    8.61% {
-        transform: matrix3d(1.002, -0.083, 0, 0, 0.296, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    12.71% {
-        transform: matrix3d(0.992, 0.149, 0, 0, -0.001, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    12.91% {
-        transform: matrix3d(0.991, 0.154, 0, 0, -0.01, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    17.22% {
-        transform: matrix3d(0.984, 0.181, 0, 0, -0.111, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    18.92% {
-        transform: matrix3d(0.987, 0.163, 0, 0, -0.116, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    25.23% {
-        transform: matrix3d(0.998, 0.066, 0, 0, -0.067, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    28.33% {
-        transform: matrix3d(1, 0.028, 0, 0, -0.037, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    31.43% {
-        transform: matrix3d(1, 0.004, 0, 0, -0.015, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    39.44% {
-        transform: matrix3d(1, -0.013, 0, 0, 0.007, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    56.46% {
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    61.66% {
-        transform: matrix3d(1, 0.001, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-    }
-
-    100% {
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        opacity: 1;
-    }
+@keyframes animationName {
+    0% {transform: matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); opacity: 0; }
+    3.2% {transform: matrix3d(0.652, -0.763, 0, 0, 0.871, 0.501, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    4.3% {transform: matrix3d(0.797, -0.614, 0, 0, 0.768, 0.649, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    6.41% {transform: matrix3d(0.953, -0.325, 0, 0, 0.534, 0.853, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    8.61% {transform: matrix3d(1.002, -0.083, 0, 0, 0.296, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    12.71% {transform: matrix3d(0.992, 0.149, 0, 0, -0.001, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    12.91% {transform: matrix3d(0.991, 0.154, 0, 0, -0.01, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    17.22% {transform: matrix3d(0.984, 0.181, 0, 0, -0.111, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    18.92% {transform: matrix3d(0.987, 0.163, 0, 0, -0.116, 0.994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    25.23% {transform: matrix3d(0.998, 0.066, 0, 0, -0.067, 0.998, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    28.33% {transform: matrix3d(1, 0.028, 0, 0, -0.037, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    31.43% {transform: matrix3d(1, 0.004, 0, 0, -0.015, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    39.44% {transform: matrix3d(1, -0.013, 0, 0, 0.007, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    56.46% {transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)} 
+    61.66% {transform: matrix3d(1, 0.001, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)}
+    100% {transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);opacity: 1;}
 }
-
 @keyframes rubberBand {
     0% {
         transform: scale3d(1, 1, 1)
@@ -282,23 +232,3 @@
     }
 }
 
-@keyframes fontalter {
-    0% {
-        font-family: 'Tapestry', cursive;
-    }
-    33% {
-        font-family: 'Nunito', sans-serif;
-    }
-    66% {
-        font-family: 'Open Sans', sans-serif;
-    }
-    100% {
-        font-family: 'Roboto', sans-serif;
-    }
-}
-
-/* .contact-form form:before {content: '<form>';font-family: 'La Belle Aurore', cursive;color: #515152;font-size: 18px;position: absolute;bottom: 100%;left: -1rem
-}
-
-.contact-form form:after {display: block !important;content: '</form>';font-family: 'La Belle Aurore', cursive;color: #515152;font-size: 18px;position: absolute;top: 100%;left: -1rem
-} */
