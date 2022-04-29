@@ -6,11 +6,12 @@ export default class MetorRainAnimation extends Component {
         super(props);
         this.state = {
             numbers: 100,
-            rainMeteorNumber: []
+            rainMeteorNumber: [],
+            className: ['rainchild-1', 'rainchild-2']
         }
     }
     componentDidMount() {
-        const test = rainMeteorFactory(this.state.numbers)
+        const test = rainMeteorFactory(this.state.numbers, this.state.className)
         this.setState({
             rainMeteorNumber: test
         })
@@ -21,7 +22,7 @@ export default class MetorRainAnimation extends Component {
                 numbers: e.target.value
             })
             setTimeout(() => {
-                const test = rainMeteorFactory(this.state.numbers)
+                const test = rainMeteorFactory(this.state.numbers, this.state.className)
                 this.setState({
                     rainMeteorNumber: test
                 })
