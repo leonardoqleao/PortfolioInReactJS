@@ -1,6 +1,7 @@
-.rain {
-    position: absolute;
+.rain{
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 .deafMetor{
     position: absolute;
@@ -12,7 +13,6 @@
     animation-fill-mode: both;
     animation-iteration-count: infinite;
 }
-
 .delayMetor-0 { animation-delay: 2000ms }
 .delayMetor-1 { animation-delay: 2200ms }
 .delayMetor-2 { animation-delay: 2400ms }

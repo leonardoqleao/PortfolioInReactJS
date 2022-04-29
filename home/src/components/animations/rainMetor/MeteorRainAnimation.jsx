@@ -1,11 +1,12 @@
 import { Component } from "react"
 import { rainMeteorFactory } from "./func/meteorRain.js";
+import './css/rain-animation.css'
 
-export default class MetorRainAnimation extends Component {
+export default class MeteorRainAnimation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            numbers: 100,
+            numbers: 200,
             rainMeteorNumber: [],
             className: [
                 'colorMetor-1',
@@ -23,22 +24,22 @@ export default class MetorRainAnimation extends Component {
             rainMeteorNumber: test
         })
     }
-    metorAlt = (e) => {
-        if (e.target.value <= 500) {
-            this.setState({
-                numbers: e.target.value
-            })
-            setTimeout(() => {
-                const test = rainMeteorFactory(this.state.numbers, this.state.className)
-                this.setState({
-                    rainMeteorNumber: test
-                })
-            }, 300)
-        } else {
-            alert(`Value: ${e.target.value}, is invalid for animation: max value is: 500`)
-            e.target.value = 500
-        }
-    }
+    // metorAlt = (e) => {
+    //     if (e.target.value <= 500) {
+    //         this.setState({
+    //             numbers: e.target.value
+    //         })
+    //         setTimeout(() => {
+    //             const test = rainMeteorFactory(this.state.numbers, this.state.className)
+    //             this.setState({
+    //                 rainMeteorNumber: test
+    //             })
+    //         }, 300)
+    //     } else {
+    //         alert(`Value: ${e.target.value}, is invalid for animation: max value is: 500`)
+    //         e.target.value = 500
+    //     }
+    // }
 
     render() {
         return (
@@ -48,9 +49,9 @@ export default class MetorRainAnimation extends Component {
                         <div className={"deafMetor " + n.class} style={{ left: n.left, top: n.top, display: 'inline-block' }}></div>
                     ))}
                 </div>
-                <form action="">
+                {/* <form action="">
                     <input type="range" min="0" max="500" value={this.state.numbers} onChange={this.metorAlt} />
-                </form>
+                </form> */}
             </div>
         )
     }
