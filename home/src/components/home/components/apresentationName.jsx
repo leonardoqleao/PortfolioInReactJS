@@ -1,7 +1,18 @@
 import { Component } from "react";
 
-
 export default class ApresentationName extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            latter: 'bom',
+            time: 3600
+        }
+    }
+    componentDidMount(){
+        setTimeout(() => {
+            this.setState({ latter: 'test' })
+        }, 3600)
+    }
     mouseOver = (e) => {
         e.target.className = this.state.latter
         setTimeout(() => {
