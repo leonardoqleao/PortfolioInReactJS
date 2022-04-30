@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import ReactTypingEffect from "react-typing-effect";
+import ReactTypingEffect from "react-typing-effect";
 import './css/home.css';
 import './css/keyframe.css';
 import './css/name-animation.css';
@@ -12,7 +12,26 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <ApresentationName/>
-                {/* <ReactTypingEffect text={['Bom dia']}/> */}
+
+                <ReactTypingEffect
+                className="typingeffect" 
+                staticText={['Full Stack Developer:']}
+                cursor={' '}/>
+
+                <ReactTypingEffect
+                className="typingeffect" 
+                text={[
+                    'vueJS',
+                    'NodeJS',
+                    'TypeScript',
+                    'ReactJS',
+                ]}
+                speed={50}
+                eraseSpeed={50}
+                eraseDelay={1000}
+                typingDelay={1000}
+                cursor={' '}/>
+
             </div>
         )
     }

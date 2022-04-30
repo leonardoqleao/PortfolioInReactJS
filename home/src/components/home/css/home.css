@@ -1,16 +1,15 @@
 .home {
     display: flex;
     flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-between;
     width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .name{
     color: rgb(34, 34, 34);
     font-family: var(--font-13);
     margin: 5% 0 0 5%;
     min-width: 40vw;
-
 }
 .name  div{
     display: inline-block;
@@ -22,5 +21,16 @@
 }
 
 .displayNone{
+    opacity: 0;
+}
+.typingeffect{
+    font-size: 1.8rem;
+    color: var(--color-3);
+    font-family: var(--font-5);
+    margin: 0 0 0 5%;
+    animation-name: animationName;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
     opacity: 0;
 }
