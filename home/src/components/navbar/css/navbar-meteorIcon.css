@@ -1,10 +1,12 @@
 .imgMeteor {
     cursor: pointer;
-    margin: 0 0 0 5%;
 }
 .imgMeteorClose{
     cursor: pointer;
     
+}
+.controlMeteor {
+    margin: 0 25% 0 0;
 }
 @keyframes closeOpen {
     from{
