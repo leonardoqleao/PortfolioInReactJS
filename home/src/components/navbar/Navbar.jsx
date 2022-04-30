@@ -13,10 +13,10 @@ export default class Navbar extends Component {
         super(props);
         this.state = {
             mobileResponsive: {
-                activeIcon: 'open',
-                options: 'navbar-options',
-                navbar: 'navbarAnimation',
-                icon: 'icon'
+                activeIcon: '',
+                options: 'mobile-navbar-options',
+                navbar: 'navbarClose',
+                icon: 'closeIcon'
             }
         }
     }
