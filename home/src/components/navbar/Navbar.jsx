@@ -15,7 +15,8 @@ export default class Navbar extends Component {
             mobileResponsive: {
                 activeIcon: 'open',
                 options: 'navbar-options',
-                navbar: 'navbarAnimation'
+                navbar: 'navbarAnimation',
+                icon: 'icon'
             }
         }
     }
@@ -25,7 +26,8 @@ export default class Navbar extends Component {
                 mobileResponsive: {
                     activeIcon: '',
                     options: 'mobile-navbar-options',
-                    navbar: 'navbarAnimationClose'
+                    navbar: 'navbarAnimationClose',
+                    icon: 'closeIcon'
                 }
             })
         } else {
@@ -33,18 +35,17 @@ export default class Navbar extends Component {
                 mobileResponsive: {
                     activeIcon: 'open',
                     options: 'navbar-options',
-                    navbar: 'navbarAnimation'
+                    navbar: 'navbarAnimation',
+                    icon: 'icon'
                 }
             })
         }
     }
     render() {
-        const { options } = this.state.mobileResponsive
-        const { navbar } = this.state.mobileResponsive
-        const { activeIcon } = this.state.mobileResponsive
+        const { activeIcon, options, navbar, icon } = this.state.mobileResponsive
         return (
             <nav id={navbar} >
-                <div class="icon">
+                <div class={icon}>
                     <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
                         <span></span>
                         <span></span>
