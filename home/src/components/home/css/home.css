@@ -30,7 +30,7 @@
     margin: 0 0 0 5%;
     animation-name: animationName;
     animation-duration: 1s;
-    animation-delay: 4s;
+    animation-delay: 3.7s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
