@@ -1,0 +1,6 @@
+.imgMeteor {
+    cursor: pointer;
+}
+.imgMeteor img {
+    max-width: 40px;
+}

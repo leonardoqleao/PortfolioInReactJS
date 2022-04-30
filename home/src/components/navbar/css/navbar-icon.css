@@ -1,23 +1,29 @@
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 90%;
+  height: 45px;
   position: absolute;
-  left: 105%;
-  top: 10%;
-  transform: translate(-50%, -50%);
+  top: 1%;
+  display: flex;
+  align-self: flex-end;
+  align-self: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-start;
+  justify-content: space-evenly;
 }
 
 @media (max-height: 800px) {
   .icon {
-    top: 13%;
+    top: 3%;
   }
 }
 
 .navicon {
+  margin: 5px;
   width: 45px;
   height: 45px;
   position: absolute;
-  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 

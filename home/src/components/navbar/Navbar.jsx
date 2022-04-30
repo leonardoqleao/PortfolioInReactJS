@@ -1,9 +1,12 @@
 import { Component } from 'react';
 import NavbarOptions from './components/NavbarOptions';
+import meteorImag from '../../imgs/Meteor.png';
 import './css/navbar.css';
 import './css/navbar-animation.css';
 import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
+import './css/navbar-meteorIcon.css';
+
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -41,13 +44,17 @@ export default class Navbar extends Component {
         const { activeIcon } = this.state.mobileResponsive
         return (
             <nav id={navbar} >
-                <div onClick={this.onClickmobileResponsive}  class="icon">
-                    <div class={"navicon " + activeIcon}>
+                <div class="icon">
+                    <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
+                    <div className='imgMeteor'>
+                        <img src={meteorImag} alt="" srcset="" />
+                    </div>
                 </div>
+
                 <NavbarOptions options={options} />
             </nav>
         )
