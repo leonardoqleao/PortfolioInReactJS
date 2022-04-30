@@ -4,12 +4,21 @@
   position: absolute;
   top: 1%;
   display: flex;
-  align-self: flex-end;
-  align-self: flex-end;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-end;
   align-content: flex-start;
+  justify-content: space-evenly;
+}
+
+.closeIcon {
+  width: 90%;
+  height: 100px;
+  position: absolute;
+  top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
   justify-content: space-evenly;
 }
 
@@ -84,7 +93,7 @@
 
 .navicon.open span:nth-child(1) {
   animation: span1 1.2s forwards cubic-bezier(.8, .5, .2, 1.4);
-  
+
 }
 
 @keyframes span1 {
