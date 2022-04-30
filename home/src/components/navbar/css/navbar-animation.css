@@ -1,4 +1,4 @@
-#navbarAnimationClose, #navbarAnimation { overflow: hidden;}
+#navbarAnimationClose, #navbarAnimation { overflow: hidden; }
 #navbarAnimation {
     background-color: var(--color-1);
     justify-content: space-around;

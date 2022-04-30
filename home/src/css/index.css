@@ -37,7 +37,7 @@ body{
   --font-18: 'Monoton', cursive;
 }
 *::selection{/*Alterando a cor de fundo dos textos selecionados.*/
-  background-color: rgba(52, 179, 145, 0.378);
+  background: none;
 }
 body {
   margin: 0;

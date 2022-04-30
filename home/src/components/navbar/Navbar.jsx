@@ -1,11 +1,12 @@
 import { Component } from 'react';
 import NavbarOptions from './components/NavbarOptions';
-import meteorImag from '../../imgs/Meteor.png';
+
 import './css/navbar.css';
 import './css/navbar-animation.css';
 import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
 import './css/navbar-meteorIcon.css';
+import ControlMeteor from './components/ControlMeteor';
 
 
 export default class Navbar extends Component {
@@ -17,15 +18,15 @@ export default class Navbar extends Component {
                 options: 'mobile-navbar-options',
                 navbar: 'navbarClose',
                 icon: 'closeIcon',
-                iconMetor: 'imgMeteorClose'
+                iconMeteor: 'imgMeteorClose'
             },
-            displayIconMetor: ''
+            displayiconMeteor: ''
 
         }
     }
     onClickmobileResponsive = () => {
         setTimeout(() => {
-            this.setState({ displayIconMetor: ''})
+            this.setState({ displayiconMeteor: '' })
         }, 2000);
         if (this.state.mobileResponsive.activeIcon === 'open') {
             this.setState({
@@ -34,9 +35,9 @@ export default class Navbar extends Component {
                     options: 'mobile-navbar-options',
                     navbar: 'navbarAnimationClose',
                     icon: 'closeIcon',
-                    iconMetor: 'imgMeteorClose'
+                    iconMeteor: 'imgMeteorClose'
                 },
-                displayIconMetor: 'none'
+                displayiconMeteor: 'none'
             })
         } else {
             this.setState({
@@ -45,25 +46,28 @@ export default class Navbar extends Component {
                     options: 'navbar-options',
                     navbar: 'navbarAnimation',
                     icon: 'icon',
-                    iconMetor: 'imgMeteorClose'
+                    iconMeteor: 'imgMeteorClose'
                 },
-                displayIconMetor: 'none'
+                displayiconMeteor: 'none'
             })
         }
     }
+
+
     render() {
-        const { activeIcon, options, navbar, icon, iconMetor } = this.state.mobileResponsive
+        const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
         return (
-            <nav id={navbar} >
+            <nav className='navbarSelection' id={navbar} >
                 <div class={icon}>
                     <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <div style={{display: this.state.displayIconMetor}} className={iconMetor}>
-                        <img src={meteorImag} alt="" srcset="" />
-                    </div>
+                    <ControlMeteor
+                    iconMeteor={iconMeteor}
+                    displayiconMeteor={this.state.displayiconMeteor}
+                    />
                 </div>
 
                 <NavbarOptions options={options} />
