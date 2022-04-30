@@ -21,10 +21,12 @@ export default class Home extends Component {
                 <ReactTypingEffect
                 className="typingeffect" 
                 text={[
-                    'vueJS',
+                    'ReactJS',
                     'NodeJS',
                     'TypeScript',
-                    'ReactJS',
+                    'TDD',
+                    'GCP',
+                    'MySQL',
                 ]}
                 speed={50}
                 eraseSpeed={50}
