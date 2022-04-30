@@ -4,6 +4,7 @@ import './css/home.css';
 import './css/keyframe.css';
 import './css/name-animation.css';
 import ApresentationName from "./components/ApresentationName.jsx";
+import './css/mobile-resposive.css'
 
 
 export default class Home extends Component {

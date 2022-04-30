@@ -3,11 +3,12 @@
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-between;
+    width: 80%;
 }
 .name{
     color: rgb(34, 34, 34);
     font-family: var(--font-13);
-    margin: 5% 0 0 15%;
+    margin: 5% 0 0 5%;
     min-width: 40vw;
 
 }
