@@ -16,19 +16,27 @@ export default class Navbar extends Component {
                 activeIcon: '',
                 options: 'mobile-navbar-options',
                 navbar: 'navbarClose',
-                icon: 'closeIcon'
-            }
+                icon: 'closeIcon',
+                iconMetor: 'imgMeteorClose'
+            },
+            displayIconMetor: ''
+
         }
     }
     onClickmobileResponsive = () => {
+        setTimeout(() => {
+            this.setState({ displayIconMetor: ''})
+        }, 2000);
         if (this.state.mobileResponsive.activeIcon === 'open') {
             this.setState({
                 mobileResponsive: {
                     activeIcon: '',
                     options: 'mobile-navbar-options',
                     navbar: 'navbarAnimationClose',
-                    icon: 'closeIcon'
-                }
+                    icon: 'closeIcon',
+                    iconMetor: 'imgMeteorClose'
+                },
+                displayIconMetor: 'none'
             })
         } else {
             this.setState({
@@ -36,13 +44,15 @@ export default class Navbar extends Component {
                     activeIcon: 'open',
                     options: 'navbar-options',
                     navbar: 'navbarAnimation',
-                    icon: 'icon'
-                }
+                    icon: 'icon',
+                    iconMetor: 'imgMeteorClose'
+                },
+                displayIconMetor: 'none'
             })
         }
     }
     render() {
-        const { activeIcon, options, navbar, icon } = this.state.mobileResponsive
+        const { activeIcon, options, navbar, icon, iconMetor } = this.state.mobileResponsive
         return (
             <nav id={navbar} >
                 <div class={icon}>
@@ -51,7 +61,7 @@ export default class Navbar extends Component {
                         <span></span>
                         <span></span>
                     </div>
-                    <div className='imgMeteor'>
+                    <div style={{display: this.state.displayIconMetor}} className={iconMetor}>
                         <img src={meteorImag} alt="" srcset="" />
                     </div>
                 </div>

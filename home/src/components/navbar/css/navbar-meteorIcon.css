@@ -1,6 +1,23 @@
 .imgMeteor {
     cursor: pointer;
+    margin: 0 0 0 5%;
 }
-.imgMeteor img {
+.imgMeteorClose{
+    cursor: pointer;
+    
+}
+@keyframes closeOpen {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.imgMeteor img, .imgMeteorClose img {
     max-width: 40px;
+    animation: closeOpen 1s ease-in-out;
+    animation-iteration-count: 1;
+    margin: 0 0 0 30%;
 }

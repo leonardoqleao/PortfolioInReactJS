@@ -6,15 +6,15 @@
         justify-content: space-around;
         flex-direction: column;
     }
-    #navbarAnimationClose {
-        width: 8vw;
+    #navbarAnimationClose, #navbarClose {
+        width: 6vw;
     }
     @keyframes navbarClose {
         from  { width: 18vw; background-color: var(--color-1) }  
-        to   { width: 8vw;}
+        to   { width: 6vw;}
     }
     @keyframes navbar {
-        from   { width: 8vw; background-color: var(--color-4)}
+        from   { width: 6vw; background-color: var(--color-4)}
         to  { width: 18vw}  
     }
 }
@@ -26,7 +26,7 @@
         justify-content: space-around;
         flex-direction: column;
     }
-    #navbarAnimationClose {
+    #navbarAnimationClose, #navbarClose {
         width: 10vw;
     }
     @keyframes navbarClose {
@@ -46,7 +46,7 @@
         justify-content: space-around;
         flex-direction: column;
     }
-    #navbarAnimationClose {
+    #navbarAnimationClose, #navbarClose {
         height: 100vh;
         width: 15vw;
     }
@@ -67,7 +67,7 @@
         justify-content: space-around;
         flex-direction: column;
     }
-    #navbarAnimationClose {
+    #navbarAnimationClose, #navbarClose {
         width: 20vw;
     }
     @keyframes navbarClose {
