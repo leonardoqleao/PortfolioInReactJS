@@ -1,11 +1,11 @@
 .rain{
-    overflow: hidden;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
-.deafMetor{
-    position: absolute;
-    display: inline-block;
+
+.deafMeteor{
+    position: fixed;
     width: 2.5px;
     height: 38px;
     animation: rain;

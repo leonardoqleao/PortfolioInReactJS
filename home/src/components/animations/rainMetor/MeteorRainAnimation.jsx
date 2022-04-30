@@ -46,7 +46,7 @@ export default class MeteorRainAnimation extends Component {
             <div className="rain">
                 <div id="rain">
                     {this.state.rainMeteorNumber.map(n => (
-                        <div className={"deafMetor " + n.class} style={{ left: n.left, top: n.top, display: 'inline-block' }}></div>
+                        <div className={"deafMeteor " + n.class} style={{ left: n.left, top: n.top, display: 'inline-block' }}></div>
                     ))}
                 </div>
                 {/* <form action="">
