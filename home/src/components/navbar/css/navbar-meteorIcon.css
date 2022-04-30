@@ -27,8 +27,10 @@
 .controlMeteor img:hover {
     transform: scale(1.3);
 }
+
 .dropDownControler {
-    display: none;
+    position: relative;
+    transform: rotate(90deg);
 }
 
 
