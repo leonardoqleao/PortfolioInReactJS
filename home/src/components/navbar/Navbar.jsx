@@ -1,13 +1,13 @@
 import { Component } from 'react';
 import NavbarOptions from './components/NavbarOptions';
-import { rainMeteorFactory } from './components/rainMetor/func/meteorRain';
+import ControlMeteor from './components/ControlMeteor';
+import MeteorRainAnimation from './components/rainMetor/MeteorRainAnimation';
 import './css/navbar.css';
 import './css/navbar-animation.css';
 import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
 import './css/navbar-meteorIcon.css';
-import ControlMeteor from './components/ControlMeteor';
-import MeteorRainAnimation from './components/rainMetor/MeteorRainAnimation';
+import './css/navbar-raincontrol.css';
 
 
 export default class Navbar extends Component {
@@ -21,8 +21,7 @@ export default class Navbar extends Component {
                 icon: 'closeIcon',
                 iconMeteor: 'imgMeteorClose'
             },
-            displayiconMeteor: '',
-            numbers: 0
+            displayiconMeteor: ''
 
         }
     }
@@ -54,22 +53,7 @@ export default class Navbar extends Component {
             })
         }
     }
-    metorAlt = (e) => {
-        if (e.target.value <= 500) {
-            this.setState({
-                numbers: e.target.value
-            })
-            setTimeout(() => {
-                const test = rainMeteorFactory(this.state.numbers, this.state.className)
-                this.setState({
-                    rainMeteorNumber: test
-                })
-            }, 300)
-        } else {
-            alert(`Value: ${e.target.value}, is invalid for animation: max value is: 500`)
-            e.target.value = 500
-        }
-    }
+
 
     render() {
         const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
@@ -86,12 +70,8 @@ export default class Navbar extends Component {
                             iconMeteor={iconMeteor}
                             displayiconMeteor={this.state.displayiconMeteor}
                         />
-                        <div className="dropDownControler">
-                            <form action="">
-                                <input type="range" min="0" max="500" value={this.state.numbers} onChange={this.metorAlt} />
-                            </form>
-                        </div>
                     </div>
+
                     <NavbarOptions options={options} />
                 </nav>
                 <MeteorRainAnimation />

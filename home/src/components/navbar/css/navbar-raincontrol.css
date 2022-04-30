@@ -1,0 +1,9 @@
+.dropDownControler {
+    transform: rotate(90deg);
+    margin: 0;
+}
+
+
+.rain {
+    display: none;
+}

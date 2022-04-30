@@ -6,7 +6,13 @@
     
 }
 .controlMeteor {
-    margin: 0 25% 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 142px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
 }
 @keyframes closeOpen {
     from{
@@ -26,14 +32,4 @@
 }
 .controlMeteor img:hover {
     transform: scale(1.3);
-}
-
-.dropDownControler {
-    position: relative;
-    transform: rotate(90deg);
-}
-
-
-.rain {
-    display: none;
 }
