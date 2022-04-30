@@ -7,6 +7,7 @@ import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
 import './css/navbar-meteorIcon.css';
 import ControlMeteor from './components/ControlMeteor';
+import MeteorRainAnimation from './components/rainMetor/MeteorRainAnimation';
 
 
 export default class Navbar extends Component {
@@ -57,21 +58,24 @@ export default class Navbar extends Component {
     render() {
         const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
         return (
-            <nav className='navbarSelection' id={navbar} >
-                <div class={icon}>
-                    <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <>
+                <nav className='navbarSelection' id={navbar} >
+                    <div class={icon}>
+                        <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ControlMeteor
+                            iconMeteor={iconMeteor}
+                            displayiconMeteor={this.state.displayiconMeteor}
+                        />
                     </div>
-                    <ControlMeteor
-                    iconMeteor={iconMeteor}
-                    displayiconMeteor={this.state.displayiconMeteor}
-                    />
-                </div>
 
-                <NavbarOptions options={options} />
-            </nav>
+                    <NavbarOptions options={options} />
+                </nav>
+                <MeteorRainAnimation />
+            </>
         )
     }
 }

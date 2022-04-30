@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { rainMeteorFactory } from "../../animations/rainMetor/func/meteorRain";
+import { rainMeteorFactory } from "./rainMetor/func/meteorRain";
 import meteorImag from '../../../imgs/Meteor.png';
 
 export default class ControlMeteor extends Component {
