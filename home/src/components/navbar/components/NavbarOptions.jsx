@@ -1,19 +1,24 @@
 import { Component } from "react";
-import OptionContact from "./OptionContact";
-import OptionHome from "./OptionHome";
-import OptionProfile from "./OptionProfile";
-import OptionProjects from "./OptionProjects";
+import { Link } from "@reach/router"
 
 export default class NavbarOptions extends Component {
     render() {
-        const {options} = this.props
+        const { options } = this.props
 
         return (
             <ul className='navbarUl1'>
-                <OptionHome options={options}/>
-                <OptionProfile options={options}/>
-                <OptionProjects options={options}/>
-                <OptionContact options={options}/>
+                <li id='animationInHomeOption' className={options}>
+                    <Link to="/">Home</Link>
+                </li>
+                <li id='animationInProfileOption' className={options}>
+                    <a href="#profile">Profile</a>
+                </li>
+                <li id='animationInProjectsOption' className={options}>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li id='animationInContactOption' className={options}>
+                    <a href="Contact">Contact</a>
+                </li>
             </ul>
         )
     }
