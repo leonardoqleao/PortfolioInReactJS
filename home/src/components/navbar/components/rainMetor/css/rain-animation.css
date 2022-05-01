@@ -29,11 +29,8 @@
 .delayMetor-14 { animation-delay: 5000ms; animation-duration: 3s; }
 
 .colorMetor-1 { background-image: linear-gradient(to top, rgba(255, 0, 191, 0.753), var(--color-6)); }
-.colorMetor-2 { background-image: linear-gradient(to top, rgba(25, 0, 255, 0.753), var(--color-6)); } 
-.colorMetor-3 { background-image: linear-gradient(to top, rgba(0, 255, 106, 0.753), var(--color-6)); } 
-.colorMetor-4 { background-image: linear-gradient(to top, rgba(119, 0, 255, 0.753), var(--color-6)); } 
-.colorMetor-5 { background-image: linear-gradient(to top, rgba(255, 0, 0, 0.753), var(--color-6)); } 
-.colorMetor-6 { background-image: linear-gradient(to top, rgba(229, 255, 0, 0.753), var(--color-6)); } 
+.colorMetor-2 { background-image: linear-gradient(to top, rgba(119, 0, 255, 0.753), var(--color-6)); } 
+.colorMetor-3 { background-image: linear-gradient(to top, rgba(255, 0, 0, 0.753), var(--color-6)); } 
 
 @keyframes rain {
     0% {

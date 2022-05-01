@@ -6,15 +6,12 @@ export default class MeteorRainAnimation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            numbers: 250,
+            numbers: 300,
             rainMeteorNumber: [],
             className: [
                 'colorMetor-1',
                 'colorMetor-2',
                 'colorMetor-3',
-                'colorMetor-4',
-                'colorMetor-5',
-                'colorMetor-6',
             ]
         }
     }
