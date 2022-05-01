@@ -71,7 +71,7 @@ export default class Navbar extends Component {
                             displayiconMeteor={this.state.displayiconMeteor}
                         />
                     </div>
-
+                    
                     <NavbarOptions options={options} />
                 </nav>
                 <MeteorRainAnimation />

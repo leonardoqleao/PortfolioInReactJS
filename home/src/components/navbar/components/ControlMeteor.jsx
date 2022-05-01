@@ -36,11 +36,6 @@ export default class ControlMeteor extends Component {
                 <div onClick={this.onClickMetorChange} style={{ display: displayiconMeteor }} className={iconMeteor}>
                     <img src={meteorImag} alt="" srcset="" />
                 </div>
-                <div className="dropDownControler">
-                    <form action="">
-                        <input type="range" min="0" max="500" value={this.state.numbers} onChange={this.metorAlt} />
-                    </form>
-                </div>
             </div>
         )
     }
