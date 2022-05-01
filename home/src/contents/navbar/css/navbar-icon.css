@@ -173,9 +173,16 @@
   margin: 8px 0;
   max-width: 50px;
   position: relative;
+  animation: closeOpen 2s ease-in-out;
+  animation-iteration-count: 1;
+  transition: all .2s;
+}
+.socialIcon:hover {
+  transform: scale(1.3);
 }
 
 @media (max-height: 1000px) {
+
   .social,
   .socialClose {
     bottom: 8%;

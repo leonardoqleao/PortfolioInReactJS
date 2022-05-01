@@ -19,9 +19,9 @@
 
 .imgMeteor img, .imgMeteorClose img {
     max-width: 40px;
+    margin: 0 0 0 30%;
     animation: closeOpen 1s ease-in-out;
     animation-iteration-count: 1;
-    margin: 0 0 0 30%;
     transition: all .3s;
 }
 .controlMeteor img:hover {
