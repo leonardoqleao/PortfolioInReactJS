@@ -1,6 +1,7 @@
 .dropDownControler {
     transform: rotate(90deg);
     margin: 0;
+    display: none;
 }
 
 

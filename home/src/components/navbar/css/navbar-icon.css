@@ -1,6 +1,6 @@
 .icon {
   width: 90%;
-  height: auto;
+  height: 45px;
   position: absolute;
   top: 4%;
   display: flex;
@@ -11,7 +11,7 @@
 
 .closeIcon {
   width: 100%;
-  height: auto;
+  height: 130px;
   position: absolute;
   top: 3.5%;
   padding: 0 10% 0 0;
