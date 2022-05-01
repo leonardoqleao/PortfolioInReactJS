@@ -173,9 +173,17 @@
   margin: 8px 0;
   max-width: 50px;
   position: relative;
-  animation: closeOpen 2s ease-in-out;
+  animation: closeOpen2 2s ease-in-out;
   animation-iteration-count: 1;
   transition: all .2s;
+}
+@keyframes closeOpen2 {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
 }
 .socialIcon:hover {
   transform: scale(1.3);
