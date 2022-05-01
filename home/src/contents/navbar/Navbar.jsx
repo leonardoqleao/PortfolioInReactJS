@@ -3,11 +3,21 @@ import NavbarOptions from './components/NavbarOptions';
 import MeteorRainAnimation from './components/rainMetor/MeteorRainAnimation';
 import meteorImag from '../../imgs/Meteor.png';
 import meteorImagOff from '../../imgs/MeteorOff.png';
+import meteorImagOffBlack from '../../imgs/MeteorOffBlack.png';
+import github from '../../imgs/github.png';
+import githubBlack from '../../imgs/githubBlack.png';
+import gmail from '../../imgs/gmail.png';
+import gmailBlack from '../../imgs/gmailBlack.png';
+import linkedin from '../../imgs/linkedin.png';
+import linkedinBlack from '../../imgs/linkedinBlack.png';
+import telegram from '../../imgs/telegram.png';
+import telegramBlack from '../../imgs/telegramBlack.png';
 import './css/navbar.css';
 import './css/navbar-animation.css';
 import './css/navbar-icon.css';
 import './css/navbar-responsive-mobile.css';
 import './css/navbar-meteorIcon.css';
+import Social from './components/Social';
 
 
 export default class Navbar extends Component {
@@ -23,7 +33,14 @@ export default class Navbar extends Component {
             },
             displayiconMeteor: '',
             meteor: '',
-            icon: meteorImag
+            icon: meteorImag,
+            social: {
+                github: githubBlack,
+                gmail: gmailBlack,
+                linkedin: linkedinBlack,
+                telegram: telegramBlack,
+                class: 'socialClose'
+            }
 
         }
     }
@@ -40,8 +57,18 @@ export default class Navbar extends Component {
                     icon: 'closeIcon',
                     iconMeteor: 'imgMeteorClose'
                 },
-                displayiconMeteor: 'none'
+                displayiconMeteor: 'none',
+                social: {
+                    github: githubBlack,
+                    gmail: gmailBlack,
+                    linkedin: linkedinBlack,
+                    telegram: telegramBlack,
+                    class: 'socialClose'
+                    
+                }
             })
+            if (this.state.icon === meteorImagOff) { this.setState({ icon: meteorImagOffBlack }) }
+            
         } else {
             this.setState({
                 mobileResponsive: {
@@ -51,14 +78,30 @@ export default class Navbar extends Component {
                     icon: 'icon',
                     iconMeteor: 'imgMeteorClose'
                 },
-                displayiconMeteor: 'none'
+                displayiconMeteor: 'none',
+                social: {
+                    github: github,
+                    gmail: gmail,
+                    linkedin: linkedin,
+                    telegram: telegram,
+                    class: 'social'
+                }
             })
         }
+        if (this.state.icon === meteorImagOffBlack) { this.setState({ icon: meteorImagOff }) }
     }
     meteorOnOff = () => {
-        this.state.meteor === '' ? this.setState({ meteor: 'none', icon: meteorImagOff }) : this.setState({ meteor: '', icon: meteorImag })
-    }
+        if (this.state.meteor === '') {
+            if (this.state.mobileResponsive.activeIcon === '') {
+                this.setState({ meteor: 'none', icon: meteorImagOffBlack })
+            } else {
 
+                this.setState({ meteor: 'none', icon: meteorImagOff })
+            }
+        } else {
+            this.setState({ meteor: '', icon: meteorImag })
+        }
+    }
     render() {
         const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
         return (
@@ -77,6 +120,7 @@ export default class Navbar extends Component {
                         </div>
                     </div>
                     <NavbarOptions options={options} />
+                    <Social social={this.state.social} display={this.state.displayiconMeteor} />
                 </nav>
                 <MeteorRainAnimation display={this.state.meteor} />
             </>

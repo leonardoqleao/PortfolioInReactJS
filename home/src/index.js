@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Router } from "@reach/router";
 import Navbar from './contents/navbar/Navbar';
 import Home from './contents/home/Home';
 import React from 'react';
@@ -12,9 +11,7 @@ class HomePage extends Component {
     return (
       <div className="HomePage">
         <Navbar />
-        <Router>
-          <Home path='/' />
-        </Router>
+        <Home />
       </div>
     )
   }

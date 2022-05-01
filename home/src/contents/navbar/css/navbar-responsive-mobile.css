@@ -38,7 +38,7 @@
         to  { width: 18vw}  
     }
 }
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     #navbarAnimation {
         width: 25vw;
         display: flex;
