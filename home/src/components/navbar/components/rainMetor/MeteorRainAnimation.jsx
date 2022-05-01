@@ -6,7 +6,7 @@ export default class MeteorRainAnimation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            numbers: 200,
+            numbers: 250,
             rainMeteorNumber: [],
             className: [
                 'colorMetor-1',
@@ -19,15 +19,16 @@ export default class MeteorRainAnimation extends Component {
         }
     }
     componentDidMount() {
-        const test = rainMeteorFactory(this.state.numbers, this.state.className)
+        const RenderMetor = rainMeteorFactory(this.state.numbers, this.state.className)
         this.setState({
-            rainMeteorNumber: test
+            rainMeteorNumber: RenderMetor
         })
     }
 
     render() {
+        const {display} = this.props
         return (
-            <div className="rain">
+            <div style={{display: display}} className="rain">
                 <div id="rain">
                     {this.state.rainMeteorNumber.map(n => (
                         <div className={"deafMeteor " + n.class} style={{ left: n.left, top: n.top, display: 'inline-block' }}></div>
