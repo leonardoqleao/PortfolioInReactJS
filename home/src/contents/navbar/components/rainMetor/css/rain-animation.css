@@ -12,25 +12,25 @@
     animation-fill-mode: both;
     animation-iteration-count: infinite;
 }
-.delayMetor-0 { animation-delay: 2000ms; animation-duration: 4s; }
-.delayMetor-1 { animation-delay: 2200ms; animation-duration: 3.5s; }
-.delayMetor-2 { animation-delay: 2400ms; animation-duration: 4s; }
-.delayMetor-3 { animation-delay: 2600ms; animation-duration: 3.5s; }
-.delayMetor-4 { animation-delay: 2800ms; animation-duration: 4.1s; }
-.delayMetor-5 { animation-delay: 2000ms; animation-duration: 3.3s; }
-.delayMetor-6 { animation-delay: 3200ms; animation-duration: 4s; }
-.delayMetor-7 { animation-delay: 3400ms; animation-duration: 3.5s; }
-.delayMetor-8 { animation-delay: 3600ms; animation-duration: 4.2s; }
-.delayMetor-9 { animation-delay: 3800ms; animation-duration: 4s; }
-.delayMetor-10 { animation-delay: 4000ms; animation-duration: 4s; }
-.delayMetor-11 { animation-delay: 4200ms; animation-duration: 3.5s; }
-.delayMetor-12 { animation-delay: 4600ms; animation-duration: 4.4s; }
-.delayMetor-13 { animation-delay: 4800ms; animation-duration: 4.1s; }
-.delayMetor-14 { animation-delay: 5000ms; animation-duration: 3s; }
+.delayMeteor-0 { animation-delay: 2000ms; animation-duration: 4s; }
+.delayMeteor-1 { animation-delay: 2200ms; animation-duration: 3.5s; }
+.delayMeteor-2 { animation-delay: 2400ms; animation-duration: 4s; }
+.delayMeteor-3 { animation-delay: 2600ms; animation-duration: 3.5s; }
+.delayMeteor-4 { animation-delay: 2800ms; animation-duration: 4.1s; }
+.delayMeteor-5 { animation-delay: 2000ms; animation-duration: 3.3s; }
+.delayMeteor-6 { animation-delay: 3200ms; animation-duration: 4s; }
+.delayMeteor-7 { animation-delay: 3400ms; animation-duration: 3.5s; }
+.delayMeteor-8 { animation-delay: 3600ms; animation-duration: 4.2s; }
+.delayMeteor-9 { animation-delay: 3800ms; animation-duration: 4s; }
+.delayMeteor-10 { animation-delay: 4000ms; animation-duration: 4s; }
+.delayMeteor-11 { animation-delay: 4200ms; animation-duration: 3.5s; }
+.delayMeteor-12 { animation-delay: 4600ms; animation-duration: 4.4s; }
+.delayMeteor-13 { animation-delay: 4800ms; animation-duration: 4.1s; }
+.delayMeteor-14 { animation-delay: 5000ms; animation-duration: 3s; }
 
-.colorMetor-1 { background-image: linear-gradient(to top, rgba(255, 0, 191, 0.753), var(--color-6)); }
-.colorMetor-2 { background-image: linear-gradient(to top, rgba(119, 0, 255, 0.753), var(--color-6)); } 
-.colorMetor-3 { background-image: linear-gradient(to top, rgba(255, 0, 0, 0.753), var(--color-6)); } 
+.colorMeteor-1 { background-image: linear-gradient(to top, rgba(255, 0, 191, 0.753), var(--color-6)); }
+.colorMeteor-2 { background-image: linear-gradient(to top, rgba(119, 0, 255, 0.753), var(--color-6)); } 
+.colorMeteor-3 { background-image: linear-gradient(to top, rgba(255, 0, 0, 0.753), var(--color-6)); } 
 
 @keyframes rain {
     0% {
@@ -41,5 +41,4 @@
         transform: scale(2) translate(1000px, 1000px) rotate(-50deg);
         opacity: 0;
     }
-
 }

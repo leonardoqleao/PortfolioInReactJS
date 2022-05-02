@@ -6,7 +6,7 @@
     align-items: flex-start;
 }
 .name{
-    color: rgb(34, 34, 34);
+    color: var(--color-1);
     font-family: var(--font-13);
     margin: 5% 0 0 5%;
     min-width: 40vw;
@@ -19,7 +19,6 @@
     animation-name: wobble;
     animation-duration: 1s;
 }
-
 .displayNone{
     opacity: 0;
 }

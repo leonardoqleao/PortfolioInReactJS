@@ -12,13 +12,8 @@ import linkedin from '../../imgs/linkedin.png';
 import linkedinBlack from '../../imgs/linkedinBlack.png';
 import telegram from '../../imgs/telegram.png';
 import telegramBlack from '../../imgs/telegramBlack.png';
-import './css/navbar.css';
-import './css/navbar-animation.css';
-import './css/navbar-icon.css';
-import './css/navbar-responsive-mobile.css';
-import './css/navbar-meteorIcon.css';
 import Social from './components/Social';
-
+import './css';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -62,12 +57,10 @@ export default class Navbar extends Component {
                     gmail: gmailBlack,
                     linkedin: linkedinBlack,
                     telegram: telegramBlack,
-                    class: 'socialClose'
-                    
+                    class: 'socialClose'  
                 }
             })
             if (this.state.icon === meteorImagOff) { this.setState({ icon: meteorImagOffBlack }) }
-            
         } else {
             this.setState({
                 mobileResponsive: {
@@ -86,8 +79,8 @@ export default class Navbar extends Component {
                     class: 'social'
                 }
             })
+            if (this.state.icon === meteorImagOffBlack) { this.setState({ icon: meteorImagOff }) }  
         }
-        if (this.state.icon === meteorImagOffBlack) { this.setState({ icon: meteorImagOff }) }  
     }
     meteorOnOff = () => {
         if (this.state.meteor === '') {

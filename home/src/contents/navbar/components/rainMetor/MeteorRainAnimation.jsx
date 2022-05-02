@@ -9,9 +9,9 @@ export default class MeteorRainAnimation extends Component {
             numbers: 200,
             rainMeteorNumber: [],
             className: [
-                'colorMetor-1',
-                'colorMetor-2',
-                'colorMetor-3',
+                'colorMeteor-1',
+                'colorMeteor-2',
+                'colorMeteor-3',
             ]
         }
     }

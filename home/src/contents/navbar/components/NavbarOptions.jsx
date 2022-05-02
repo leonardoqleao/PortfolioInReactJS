@@ -13,6 +13,7 @@ export default class NavbarOptions extends Component {
         }
     }
     homeClick = () => {
+        this.props.onclickt()
         this.setState({
             className: {
                 home: 'opNavbarSelect',
@@ -23,6 +24,7 @@ export default class NavbarOptions extends Component {
         })
     }
     profileClick = () => {
+        this.props.onclickt()
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
@@ -33,6 +35,7 @@ export default class NavbarOptions extends Component {
         })
     }
     projectsClick = () => {
+        this.props.onclickt()
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
@@ -43,6 +46,7 @@ export default class NavbarOptions extends Component {
         })
     }
     contactClick = () => {
+        this.props.onclickt()
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
@@ -54,24 +58,23 @@ export default class NavbarOptions extends Component {
     }
 
     render() {
-        const { options, onclickt } = this.props
-
+        const { options } = this.props
         return (
             <ul className='navbarUl1'>
                 <li onClick={this.homeClick} id='animationInHomeOption' className={options}>
-                    <a onClick={onclickt} className={this.state.className.home} href="#Home">Home</a>
+                    <a className={this.state.className.home} href="#Home">Home</a>
                 </li>
 
                 <li onClick={this.profileClick} id='animationInProfileOption' className={options}>
-                    <a onClick={onclickt} className={this.state.className.profile} href="#profile">Profile</a>
+                    <a className={this.state.className.profile} href="#profile">Profile</a>
                 </li>
 
                 <li onClick={this.projectsClick} id='animationInProjectsOption' className={options}>
-                    <a onClick={onclickt} className={this.state.className.projects} href="#projects">Projects</a>
+                    <a className={this.state.className.projects} href="#projects">Projects</a>
                 </li>
 
                 <li onClick={this.contactClick} id='animationInContactOption' className={options}>
-                    <a onClick={onclickt} className={this.state.className.contact} href="#Contact">Contact</a>
+                    <a className={this.state.className.contact} href="#Contact">Contact</a>
                 </li>
             </ul>
         )

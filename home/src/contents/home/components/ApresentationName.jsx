@@ -11,7 +11,7 @@ export default class ApresentationName extends Component {
     componentDidMount(){
         setTimeout(() => {
             this.setState({ latter: 'nameAnimation' })
-        }, 3600)
+        }, this.state.time)
     }
     mouseOver = (e) => {
         e.target.className = this.state.latter

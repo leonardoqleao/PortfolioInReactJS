@@ -1,29 +1,28 @@
 export const rainMeteorFactory = (e, classArray) => {
-    function internalfun(left, top, className) {
-        const obj = {
+    function internalfunction(left, top, className) {
+        return {
             left: left,
             top: top,
             class: className
         }
-        return obj
     }
     const newArray = []
     const classInteral = [
-        'delayMetor-0 ',
-        'delayMetor-1 ',
-        'delayMetor-2 ',
-        'delayMetor-3 ',
-        'delayMetor-4 ',
-        'delayMetor-5 ',
-        'delayMetor-6 ',
-        'delayMetor-7 ',
-        'delayMetor-8 ',
-        'delayMetor-9 ',
-        'delayMetor-10 ',
-        'delayMetor-11 ',
-        'delayMetor-12 ',
-        'delayMetor-13 ',
-        'delayMetor-14 ',
+        'delayMeteor-0 ',
+        'delayMeteor-1 ',
+        'delayMeteor-2 ',
+        'delayMeteor-3 ',
+        'delayMeteor-4 ',
+        'delayMeteor-5 ',
+        'delayMeteor-6 ',
+        'delayMeteor-7 ',
+        'delayMeteor-8 ',
+        'delayMeteor-9 ',
+        'delayMeteor-10 ',
+        'delayMeteor-11 ',
+        'delayMeteor-12 ',
+        'delayMeteor-13 ',
+        'delayMeteor-14 ',
     ]
     let j = 0
     let l = 0
@@ -33,7 +32,7 @@ export const rainMeteorFactory = (e, classArray) => {
         if (l === classInteral.length) { l = 0 }
         const top = -((Math.random() * (1500)))
         const left = ((Math.random() * (1000) + 40))
-        const all = internalfun(left, top, classInteral[l] + classArray[j])
+        const all = internalfunction(left, top, classInteral[l] + classArray[j])
         newArray[i] = all
         j++
         l++
