@@ -1,0 +1,30 @@
+.pageTransition {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    animation: trans 3s;
+}
+@keyframes trans {
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.transition {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    font-family: var(--font-15);
+}
+@media (min-width: 1080px ) {
+    .transition {
+        font-size: 9rem;
+    }
+}

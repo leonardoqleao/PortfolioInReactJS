@@ -14,7 +14,7 @@ export default class NavbarOptions extends Component {
     }
     homeClick = () => {
         this.props.onclickt()
-        this.props.changeView('Home')
+        this.props.changeView('H O M E')
         this.setState({
             className: {
                 home: 'opNavbarSelect',
@@ -26,7 +26,7 @@ export default class NavbarOptions extends Component {
     }
     profileClick = () => {
         this.props.onclickt()
-        this.props.changeView('Profile')
+        this.props.changeView('P R O F I L E')
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
@@ -38,6 +38,7 @@ export default class NavbarOptions extends Component {
     }
     projectsClick = () => {
         this.props.onclickt()
+        this.props.changeView('P R O J E C T S')
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
@@ -49,6 +50,7 @@ export default class NavbarOptions extends Component {
     }
     contactClick = () => {
         this.props.onclickt()
+        this.props.changeView('C O N T A C T')
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
