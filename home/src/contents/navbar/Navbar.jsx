@@ -111,7 +111,7 @@ export default class Navbar extends Component {
                             </div>
                         </div>
                     </div>
-                    <NavbarOptions onclickt={this.onClickmobileResponsive} options={options} />
+                    <NavbarOptions changeView={this.props.changeView} onclickt={this.onClickmobileResponsive} options={options} />
                     <Social social={this.state.social} display={this.state.displayiconMeteor} />
                 </nav>
                 <MeteorRainAnimation display={this.state.meteor} />

@@ -14,6 +14,7 @@ export default class NavbarOptions extends Component {
     }
     homeClick = () => {
         this.props.onclickt()
+        this.props.changeView('Home')
         this.setState({
             className: {
                 home: 'opNavbarSelect',
@@ -25,6 +26,7 @@ export default class NavbarOptions extends Component {
     }
     profileClick = () => {
         this.props.onclickt()
+        this.props.changeView('Profile')
         this.setState({
             className: {
                 home: 'opNavbarSelectOff',
