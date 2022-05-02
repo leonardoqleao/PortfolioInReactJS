@@ -98,7 +98,7 @@ export default class Navbar extends Component {
         const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
         return (
             <>
-                <nav className='navbarSelection' id={navbar} >
+                <nav className='navbar' id={navbar} >
                     <div class={icon}>
                         <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
                             <span></span>
