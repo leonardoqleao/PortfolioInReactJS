@@ -37,15 +37,14 @@
 }
 #animationInHomeOption a {
     margin: 0 0 1px 0;
-    color: var(--color-1);
-    background-color: var(--color-6);
     animation-name: homeOption;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
+
 @keyframes homeOption {
-    0% { top: 800px; background-color: var(--color-1);}
-    50% { top: 800px; background-color: var(--color-1);}
+    0% { top: 800px; }
+    50% { top: 800px; }
     100% { top: 0px; }
 }
 #animationInProfileOption a {
@@ -77,4 +76,11 @@
     0% { left: 400px; color: var(--color-1);}
     50% { left: 400px; color: var(--color-1); }
     100% { left: 0px; }
+}
+.opNavbarSelect {
+    background-color: var(--color-6);
+    color: var(--color-1);
+}
+.opNavbarSelectOff {
+    color: var(--color-4);
 }

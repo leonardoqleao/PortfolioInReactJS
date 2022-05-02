@@ -7,11 +7,18 @@ import './css/HomePage.css';
 import './css/index.css';
 
 class HomePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      ViewPage: Home 
+    }
+  }
   render() {
+    const {ViewPage} = this.state
     return (
       <div className="HomePage">
         <Navbar />
-        <Home />
+        <ViewPage />
       </div>
     )
   }

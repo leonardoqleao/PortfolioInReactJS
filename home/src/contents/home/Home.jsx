@@ -8,10 +8,6 @@ import './css/mobile-resposive.css'
 
 
 export default class Home extends Component {
-    componentDidMount(){
-        const oi = new ApresentationName()
-        console.log(oi.state)
-    }
     render() {
         return (
             <div className="home">
@@ -37,7 +33,6 @@ export default class Home extends Component {
                 eraseDelay={1000}
                 typingDelay={1000}
                 cursor={' '}/>
-
             </div>
         )
     }

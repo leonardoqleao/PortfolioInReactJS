@@ -41,7 +41,6 @@ export default class Navbar extends Component {
                 telegram: telegramBlack,
                 class: 'socialClose'
             }
-
         }
     }
     onClickmobileResponsive = () => {
@@ -88,7 +87,7 @@ export default class Navbar extends Component {
                 }
             })
         }
-        if (this.state.icon === meteorImagOffBlack) { this.setState({ icon: meteorImagOff }) }
+        if (this.state.icon === meteorImagOffBlack) { this.setState({ icon: meteorImagOff }) }  
     }
     meteorOnOff = () => {
         if (this.state.meteor === '') {
@@ -119,7 +118,7 @@ export default class Navbar extends Component {
                             </div>
                         </div>
                     </div>
-                    <NavbarOptions options={options} />
+                    <NavbarOptions onclickt={this.onClickmobileResponsive} options={options} />
                     <Social social={this.state.social} display={this.state.displayiconMeteor} />
                 </nav>
                 <MeteorRainAnimation display={this.state.meteor} />
