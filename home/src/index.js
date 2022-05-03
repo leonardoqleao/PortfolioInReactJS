@@ -2,6 +2,8 @@ import { Component } from 'react';
 import Navbar from './contents/navbar/Navbar';
 import Home from './contents/home/Home';
 import Profile from './contents/profile/Profile';
+import Projects from './contents/Projects/Projects';
+import Contact from './contents/Contact/Contact';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/HomePage.css';
@@ -13,13 +15,7 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ViewPage: Profile,
-      transitionView: {
-        page:'',
-        time: 0,
-        left: 0,
-        right: 0
-      },
+      ViewPage: Home,
       pageSplit: [],
       transitionPage: 'none'
     }
@@ -36,7 +32,15 @@ class HomePage extends Component {
         case 'P R O F I L E':
           this.setState({ ViewPage: Profile });
           break;
+        case 'P R O J E C T S':
+          this.setState({ ViewPage: Projects });
+          break;
+        case 'C O N T A C T':
+          this.setState({ ViewPage: Contact });
+          break;
         default:
+          this.setState({ ViewPage: Home });
+          break;
       }
       this.setState({transitionPage: 'none'})
     }, 2700);
@@ -53,7 +57,6 @@ class HomePage extends Component {
             </div>
           )
           )}
-          
         </div>
         <ViewPage />
       </div>

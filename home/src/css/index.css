@@ -8,6 +8,20 @@ body{
   max-height: 100vh;
   overflow: hidden;
 }
+
+.Profile, .Projects, .Contact{
+  display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2rem;
+    font-family: var(--font-15);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Libre+Bodoni&family=Lora&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Orelega+One&family=PT+Serif&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Square+Peg&family=Tapestry&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200&family=Libre+Bodoni&family=Lora&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Orelega+One&family=PT+Serif&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Square+Peg&family=Whisper&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script&family=El+Messiri&family=La+Belle+Aurore&family=Major+Mono+Display&family=Monoton&family=Square+Peg&display=swap');
 :root{

@@ -16,7 +16,7 @@
     font-size: 5rem;
 }
 .nameAnimation{
-    animation-name: wobble;
+    animation-name: rubberBand;
     animation-duration: 1s;
 }
 .displayNone{

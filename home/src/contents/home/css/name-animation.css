@@ -1,5 +1,5 @@
 .blockName .incialNameAnimation {
-    animation-name: animationName;          
+    animation-name: ajs-pulseIn;          
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;     
