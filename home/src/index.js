@@ -15,7 +15,7 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ViewPage: Home,
+      ViewPage: Profile,
       pageSplit: [],
       transitionPage: 'none'
     }
