@@ -1,14 +1,23 @@
-.rightSide p {
-    height: 17vh;
-    width: 100%;
+.rightSide {
+    margin-top: 17vh;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
-
-.rightSide {
-    max-width: 50%;
-    height: 93vh;
+.rightSide p {
+    height: 34vh;
+    width: 90%;
+    opacity: 0;
+    animation-name: rightT;
+    animation-duration: .3s;
+    position: relative;
+    animation-fill-mode: forwards;
 }
+@keyframes rightT {
+    0% { opacity: 0; bottom: 100px; }
+    100% { opacity: 1; bottom: 0px; }
+}
+.rightSide p:nth-child(1) { animation-delay: .79s; }    /*  2015  */
+.rightSide p:nth-child(2) { animation-delay: 1.59s; }   /*  2020  */
+.rightSide p:nth-child(3) { animation-delay: 2.39s; }  /*  2022  */
