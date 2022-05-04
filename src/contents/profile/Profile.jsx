@@ -27,22 +27,22 @@ export default class Profile extends Component {
                     <div className="linebetween">
                         <div className="years">
                             <p>2012</p> 
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>2015</p> 
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>2017</p> 
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>2020</p> 
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>2021</p> 
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>2022</p>
-                            <span id="year">
+                            <span id="LineBwYear">
                             </span>
                             <p>TODAY</p> 
                         </div>
