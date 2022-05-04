@@ -27,70 +27,37 @@
 }
 #LineBwYear {
     width: 4px;
-    
     border-radius: 15%;
     margin: auto;
     animation-name: timeL;
     animation-duration: .4s;
     animation-fill-mode: forwards;
 }
-
 @keyframes timeL {
     from {
         height: 1vh;
         opacity: 0;
         background-color: var(--color-5);
-    }
-    to {
+    } to {
         height: 14vh;
         opacity: 0.8;
         background-color: var(--color-2);
     }
 }
-.years #LineBwYear:nth-child(2) {
-    animation-delay: .39s;
-}
-.years #LineBwYear:nth-child(4) {
-    animation-delay: .79s;
-}
-.years #LineBwYear:nth-child(6) {
-    animation-delay: 1.19s;
-}
-.years #LineBwYear:nth-child(8) {
-    animation-delay: 1.59s;
-}
-.years #LineBwYear:nth-child(10) {
-    animation-delay: 1.99s;
-}
-.years #LineBwYear:nth-child(12) {
-    animation-delay: 2.39s;
-}
+.years #LineBwYear:nth-child(2) { animation-delay: .39s; }
+.years #LineBwYear:nth-child(4) { animation-delay: .79s; }
+.years #LineBwYear:nth-child(6) { animation-delay: 1.19s; }
+.years #LineBwYear:nth-child(8) { animation-delay: 1.59s; }
+.years #LineBwYear:nth-child(10) { animation-delay: 1.99s; }
+.years #LineBwYear:nth-child(12) { animation-delay: 2.39s; }
 @keyframes yearT {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0.7;
-    }
+    from { opacity: 0; }
+    to { opacity: 0.7; }
 }
-.years p:nth-child(1) {
-    animation-delay: .39s;
-}
-.years p:nth-child(3) {
-    animation-delay: .79s;
-}
-.years p:nth-child(5) {
-    animation-delay: 1.19s;
-}
-.years p:nth-child(7) {
-    animation-delay: 1.59s;
-}
-.years p:nth-child(9) {
-    animation-delay: 1.99s;
-}
-.years p:nth-child(11) {
-    animation-delay: 2.39s;
-}
-.years p:nth-child(13) {
-    animation-delay: 2.79s;
-}
+.years p:nth-child(1) { animation-delay: .39s; }
+.years p:nth-child(3) { animation-delay: .79s; }
+.years p:nth-child(5) { animation-delay: 1.19s; }
+.years p:nth-child(7) { animation-delay: 1.59s; }
+.years p:nth-child(9) { animation-delay: 1.99s; }
+.years p:nth-child(11) { animation-delay: 2.39s; }
+.years p:nth-child(13) { animation-delay: 2.79s; }
