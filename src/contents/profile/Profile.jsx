@@ -1,4 +1,5 @@
 import { Component } from "react";
+import LineBetween from "./components/LineBetween";
 import './css';
 
 export default class Profile extends Component {
@@ -24,29 +25,7 @@ export default class Profile extends Component {
                         <p>
                         </p>
                     </div>
-                    <div className="linebetween">
-                        <div className="years">
-                            <p>2012</p> 
-                            <span id="LineBwYear">
-                            </span>
-                            <p>2015</p> 
-                            <span id="LineBwYear">
-                            </span>
-                            <p>2017</p> 
-                            <span id="LineBwYear">
-                            </span>
-                            <p>2020</p> 
-                            <span id="LineBwYear">
-                            </span>
-                            <p>2021</p> 
-                            <span id="LineBwYear">
-                            </span>
-                            <p>2022</p>
-                            <span id="LineBwYear">
-                            </span>
-                            <p>TODAY</p> 
-                        </div>
-                    </div>
+                    <LineBetween/>
                     <div className="rightSide">
                     <p>
                         </p>
