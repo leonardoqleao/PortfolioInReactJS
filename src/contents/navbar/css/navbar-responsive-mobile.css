@@ -3,8 +3,6 @@
         width: 18vw;
         display: flex;
         background-color: var(--color-1);
-        justify-content: space-around;
-        flex-direction: column;
     }
     #navbarAnimationClose, #navbarClose {
         width: 6vw;
@@ -23,18 +21,16 @@
         width: 18vw;
         display: flex;
         background-color: var(--color-1);
-        justify-content: space-around;
-        flex-direction: column;
     }
     #navbarAnimationClose, #navbarClose {
-        width: 10vw;
+        width: 7vw;
     }
     @keyframes navbarClose {
         from  { width: 18vw; background-color: var(--color-1) }  
-        to   { width: 10vw;}
+        to   { width: 7vw;}
     }
     @keyframes navbar {
-        from   { width: 10vw; background-color: var(--color-4)}
+        from   { width: 7vw; background-color: var(--color-4)}
         to  { width: 18vw}  
     }
 }
@@ -43,19 +39,17 @@
         width: 25vw;
         display: flex;
         background-color: var(--color-1);
-        justify-content: space-around;
-        flex-direction: column;
     }
     #navbarAnimationClose, #navbarClose {
         height: 100vh;
-        width: 15vw;
+        width: 10vw;
     }
     @keyframes navbarClose {
         from  { width: 25vw; background-color: var(--color-1) }  
-        to   { width: 15vw;}
+        to   { width: 10vw;}
     }
     @keyframes navbar {
-        from   { width: 15vw; background-color: var(--color-4)}
+        from   { width: 10vw; background-color: var(--color-4)}
         to  { width: 25vw }  
     }
 }
@@ -64,18 +58,17 @@
         width: 100vw;
         display: flex;
         background-color: var(--color-1);
-        justify-content: space-around;
-        flex-direction: column;
     }
+
     #navbarAnimationClose, #navbarClose {
-        width: 20vw;
+        width: 15vw;
     }
     @keyframes navbarClose {
         from  { width: 100vw; background-color: var(--color-1) }  
-        to   { width: 20vw;}
+        to   { width: 15vw;}
     }
     @keyframes navbar {
-        from   { width: 20vw; background-color: var(--color-4)}
+        from   { width: 15vw; background-color: var(--color-4)}
         to  { width: 100vw }  
     }
 }
