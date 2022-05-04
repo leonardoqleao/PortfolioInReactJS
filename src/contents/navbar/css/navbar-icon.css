@@ -2,7 +2,7 @@
   width: 90%;
   height: 45px;
   position: absolute;
-  top: 2%;
+  top: 2.1%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -14,12 +14,20 @@
   height: 130px;
   position: absolute;
   top: 1.5%;
-  /* padding: 0 10% 0 0; */
   display: flex;
+  animation: closing 2.5s;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+}
+@keyframes closing {
+  from{
+    margin-left: 75%;
+  }  
+  to {
+    margin-left: 0%;
+  }
 }
 
 .navicon {
