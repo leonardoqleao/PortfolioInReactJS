@@ -13,12 +13,26 @@
     animation-duration: .3s;
     position: relative;
     animation-fill-mode: forwards;
-
 }
 @keyframes leftT {
     0% { opacity: 0; bottom: 100px; }
     100% { opacity: 1; bottom: 0px; }
 }
+#lefty2015, #lefty2020, #lefty2022{ display: none;}
 .leftSide p:nth-child(1) { animation-delay: .39s; }    /*  2012  */
-.leftSide p:nth-child(2) { animation-delay: 1.19s; }   /*  2017  */
-.leftSide p:nth-child(3) { animation-delay: 1.99s; }   /*  2021  */
+.leftSide p:nth-child(2) { animation-delay: .79s; }    /*  2015  */
+.leftSide p:nth-child(3) { animation-delay: 1.19s; }   /*  2017  */
+.leftSide p:nth-child(4) { animation-delay: 1.59s; }   /*  2020  */
+.leftSide p:nth-child(5) { animation-delay: 1.99s; }   /*  2021  */
+.leftSide p:nth-child(6) { animation-delay: 2.39s; }  /*  2022  */
+@media (max-width: 720px) {
+    #lefty2015, #lefty2020, #lefty2022{ display: inline;}
+    .leftSide {
+        max-width: 100%;
+    }
+    .leftSide p {
+        height: 17vh;
+        width: 100%;
+        text-align: left;
+    }
+}

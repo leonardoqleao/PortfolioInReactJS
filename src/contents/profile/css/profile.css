@@ -18,7 +18,19 @@
   flex-direction: row;
   align-items: flex-start;
 }
+
 .Profile h1 {
   font-size: 2.5rem;
   font-family: var(--font-15);
+}
+
+@media (max-width: 1080px) {
+  .Profile {
+    width: 85vw;
+  }
+}
+@media (max-width: 720px) {
+  .timeline {
+    flex-direction: row-reverse;
+  }
 }
