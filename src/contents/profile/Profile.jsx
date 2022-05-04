@@ -1,5 +1,5 @@
 import { Component } from "react";
-import './css/profile.css';
+import './css';
 
 export default class Profile extends Component {
     render() {
@@ -26,10 +26,13 @@ export default class Profile extends Component {
                     </div>
                     <div className="linebetween">
                         <div className="years">
-                            <p>2018</p> 
+                            <p>2012</p> 
                             <span id="year">
                             </span>
-                            <p>2019</p> 
+                            <p>2015</p> 
+                            <span id="year">
+                            </span>
+                            <p>2017</p> 
                             <span id="year">
                             </span>
                             <p>2020</p> 
@@ -38,7 +41,7 @@ export default class Profile extends Component {
                             <p>2021</p> 
                             <span id="year">
                             </span>
-                            <p>2022</p> 
+                            <p>2022</p>
                             <span id="year">
                             </span>
                             <p>TODAY</p> 

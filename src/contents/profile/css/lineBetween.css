@@ -1,0 +1,34 @@
+.linebetween {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-start;
+    height: 93vh;
+}
+
+.years {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.years p {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-15);
+    font-size: x-large;
+}
+
+#year {
+    width: 4px;
+    height: 14vh;
+    background-color: var(--color-2);
+    opacity: 0.8;
+    border-radius: 15%;
+    margin: auto;
+}
