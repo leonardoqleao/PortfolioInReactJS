@@ -15,11 +15,13 @@
   position: absolute;
   top: 1.5%;
   display: flex;
-  animation: closing 2.5s;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+}
+.closeIcon2{
+  animation: closing 2.5s;
 }
 @keyframes closing {
   from{

@@ -48,7 +48,7 @@ export default class Navbar extends Component {
                     activeIcon: '',
                     options: 'mobile-navbar-options',
                     navbar: 'navbarAnimationClose',
-                    icon: 'closeIcon',
+                    icon: 'closeIcon closeIcon2',
                     iconMeteor: 'imgMeteorClose'
                 },
                 displayiconMeteor: 'none',
