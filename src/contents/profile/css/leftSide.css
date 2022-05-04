@@ -1,18 +1,24 @@
 .leftSide {
     text-align: end;
-}
-
-.leftSide p {
-    height: 17vh;
-    width: 100%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
 }
+.leftSide p {
+    height: 34vh;
+    width: 90%;
+    opacity: 0;
+    animation-name: leftT;
+    animation-duration: .3s;
+    position: relative;
+    animation-fill-mode: forwards;
 
-.leftSide {
-    max-width: 50%;
-    height: 93vh;
 }
+@keyframes leftT {
+    0% { opacity: 0; bottom: 100px; }
+    100% { opacity: 1; bottom: 0px; }
+}
+.leftSide p:nth-child(1) { animation-delay: .39s; }    /*  2012  */
+.leftSide p:nth-child(2) { animation-delay: 1.19s; }   /*  2017  */
+.leftSide p:nth-child(3) { animation-delay: 1.99s; }   /*  2021  */

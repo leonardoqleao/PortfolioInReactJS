@@ -9,20 +9,14 @@ export default class Profile extends Component {
                 <h1>Timeline</h1>
                 <div className="timeline">
                     <div className="leftSide">
-                        <p>
+                        <p id="y2012">
                             Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Viva Forevis aptent taciti sociosqu ad 
                         </p>
-                        <p>
-                        </p>
-                        <p>
+                        <p id="y2017">
                             Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Viva Forevis aptent taciti sociosqu ad 
                         </p>
-                        <p>
-                        </p>
-                        <p>
+                        <p id="y2021">
                             Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é.Viva Forevis aptent taciti sociosqu ad 
-                        </p>
-                        <p>
                         </p>
                     </div>
                     <LineBetween/>
