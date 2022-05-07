@@ -19,6 +19,7 @@ export default class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            navbarInAnimation: true,
             mobileResponsive: {
                 activeIcon: '',
                 options: 'mobile-navbar-options',
@@ -40,10 +41,11 @@ export default class Navbar extends Component {
     }
     onClickmobileResponsive = () => {
         setTimeout(() => {
-            this.setState({ displayiconMeteor: '' })
+            this.setState({ navbarInAnimation:true, displayiconMeteor: '' })
         }, 2000);
-        if (this.state.mobileResponsive.activeIcon === 'open') {
+        if (this.state.navbarInAnimation && this.state.mobileResponsive.activeIcon === 'open') {
             this.setState({
+                navbarInAnimation: false,
                 mobileResponsive: {
                     activeIcon: '',
                     options: 'mobile-navbar-options',
@@ -61,8 +63,9 @@ export default class Navbar extends Component {
                 }
             })
             if (this.state.icon === meteorImagOff) { this.setState({ icon: meteorImagOffBlack }) }
-        } else {
+        } else if (this.state.navbarInAnimation){
             this.setState({
+                navbarInAnimation: false,
                 mobileResponsive: {
                     activeIcon: 'open',
                     options: 'navbar-options',
