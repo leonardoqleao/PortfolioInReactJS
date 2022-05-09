@@ -100,7 +100,7 @@ export default class Navbar extends Component {
     render() {
         const { activeIcon, options, navbar, icon, iconMeteor } = this.state.mobileResponsive
         return (
-            <>
+            <div>
                 <nav className='navbar' id={navbar} >
                     <div class={icon}>
                         <div onClick={this.onClickmobileResponsive} class={"navicon " + activeIcon}>
@@ -118,7 +118,7 @@ export default class Navbar extends Component {
                     <Social social={this.state.social} display={this.state.displayiconMeteor} />
                 </nav>
                 <MeteorRainAnimation display={this.state.meteor} />
-            </>
+            </div>
         )
     }
 }
