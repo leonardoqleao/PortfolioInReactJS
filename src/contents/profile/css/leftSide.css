@@ -36,3 +36,10 @@
         text-align: left;
     }
 }
+code {
+    text-shadow: none;
+    font-size: large;
+    background-color: #0000004f;
+    border-radius: 4px;
+    padding: 0 5px;
+}
