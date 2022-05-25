@@ -10,7 +10,8 @@ export default class HomePage extends Component {
       ViewPage: Home,
       pageSplit: [],
       transitionPage: 'none',
-      titleName: 'HOME'
+      titleName: 'HOME',
+      title: "_"
     }
   }
   changeView = (id) => {
@@ -58,5 +59,29 @@ export default class HomePage extends Component {
   }
   exitNameTitle = () => {
     return this.state.titleName
+  }
+  componentDidMount() {
+    let title = [
+      '_',
+      'L_',
+      'LE_',
+      'LEO_',
+      'LEON_',
+      'LEONA_',
+      'LEONAR_',
+      'LEONARD_',
+      'LEONARDO_',
+      'LEONARDO _',
+      'LEONARDO Q_',
+      'LEONARDO Q._',
+    ]
+    let i = 0
+    setInterval(() => {
+      i < title.length - 1 ? i++ : i = 0
+      this.setState({ title: title[i] })
+    }, 400)
+  }
+  componentDidUpdate(){
+    document.title = this.state.title
   }
 }
