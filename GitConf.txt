@@ -1,0 +1,19 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = leonardo q.
+	email = leonardoq.leao@outlook.com
+[core]
+	editor = code --wait
+[alias]
+	s = !git status -s
+	c = !git add --all && git commit -m
+	lg = !git log --pretty=format:'%C(cyan)%d\n%C(green)%cn - %ce, %C(green)%cr \n%C(red)%h %C(white)%s'
+	l = !git log --pretty=format:'%C(cyan)%cn %C(green)\"%cr\" -  %C(red)%h %C(white)%s %C(blue)%d'
+	r = !git revert
+	i = !git init
+	b = !git branch
+	push-b = !git push -u origin
